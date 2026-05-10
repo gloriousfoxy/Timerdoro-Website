@@ -92,5 +92,5 @@ The site is plain HTML/CSS/JS — deploy anywhere that serves static files.
 
 ## Developer
 
-**Raphael Wudernitz** — CS student at TU Wien, indie iOS developer  
+**Raphael Wudernitz** — Informatics student at TU Wien, indie iOS developer  
 [raphael@wudernitz.at](mailto:raphael@wudernitz.at) · [github.com/gloriousfoxy](https://github.com/gloriousfoxy)
