@@ -1,0 +1,18 @@
+name: Deploy via FTP
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: FTP Deploy
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: www8.world4you.com
+          username: ftp9274171_raphael
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./
