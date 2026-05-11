@@ -15,4 +15,4 @@ jobs:
           server: www8.world4you.com
           username: ftp9274171_raphael
           password: ${{ secrets.FTP_PASSWORD }}
-          local-dir: /raphael/timerdoro
+          local-dir: /raphael/timerdoro/
