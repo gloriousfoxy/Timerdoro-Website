@@ -1,117 +1,127 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About — Timerdoro</title>
-<meta name="description" content="The story behind Timerdoro — a privacy-first Pomodoro app built solo by an indie developer in Vienna.">
-<link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="about.title">About — Timerdoro</title>
+  <meta name="description" content="The story behind Timerdoro: built solo, in Vienna, with care for design and privacy.">
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
-<main>
+<main id="main" tabindex="-1">
 
-  <header class="page-header">
-    <span class="eyebrow">Our story</span>
-    <h1>Built solo, in Vienna,<br>with care.</h1>
-    <p class="subtitle">A small story about why Timerdoro exists.</p>
-  </header>
+  <article class="article">
+    <header class="article-header">
+      <span class="eyebrow" data-i18n="about.eyebrow">Our story</span>
+      <h1 data-i18n="about.h1">Built solo, in Vienna, with care.</h1>
+      <p class="article-subtitle" data-i18n="about.subtitle">A small story about why Timerdoro exists.</p>
+    </header>
 
-  <article class="page-content">
-
-    <div class="profile-card">
-      <div class="profile-avatar">RW</div>
-      <div class="profile-info">
-        <h3>Raphael Wudernitz</h3>
-        <p>Informatics student at TU Wien · Indie iOS Developer · Building Timerdoro since 2025</p>
+    <!-- Profile -->
+    <aside class="article-profile">
+      <img src="/assets/images/app-icon.png" alt="" width="80" height="80" style="border-radius: 18px;">
+      <div>
+        <strong>Raphael Wudernitz</strong>
+        <p data-i18n="about.profile.role">Informatics student at TU Wien · Indie iOS Developer · Building Timerdoro since 2025</p>
       </div>
-    </div>
+    </aside>
 
-    <h2>Why I built this</h2>
-    <p>
-      I tried every Pomodoro app on the App Store. Some were beautiful but
-      lacked features I needed. Others had everything but felt cluttered or
-      pushed me into expensive subscriptions for basic functionality.
-      None felt right.
-    </p>
-    <p>
-      So I started building my own — initially just for myself. After friends
-      tried early versions and asked when they could have it on their phones,
-      I decided to make it real.
-    </p>
-    <p>
-      Timerdoro is the app I wished existed: clean, beautiful, native to
-      Apple's ecosystem, with a fair price and zero compromises on privacy.
-    </p>
+    <h2 data-i18n="about.h2.why">Why I built this</h2>
+    <p data-i18n="about.why.p1">I tried every Pomodoro app on the App Store…</p>
+    <p data-i18n="about.why.p2">So I started building my own…</p>
+    <p data-i18n="about.why.p3">Timerdoro is the app I wished existed…</p>
 
-    <h2>What I believe</h2>
-
+    <h2 data-i18n="about.h2.believe">What I believe</h2>
     <div class="value-grid">
-      <div class="value-card">
-        <h4>🍅 Focus over features</h4>
-        <p>An app should do one thing exceptionally well. Pomodoro is the core, everything else serves that.</p>
-      </div>
-      <div class="value-card">
-        <h4>🔒 Your data is yours</h4>
-        <p>No analytics, no trackers, no third-party SDKs. What happens on your device stays on your device.</p>
-      </div>
-      <div class="value-card">
-        <h4>💎 Pay once, own it</h4>
-        <p>Subscriptions for everything became absurd. Buy Timerdoro Pro once and keep it forever.</p>
-      </div>
-      <div class="value-card">
-        <h4>🎨 Design matters</h4>
-        <p>You'll spend hours with this app. It deserves to be beautiful, not just functional.</p>
-      </div>
-      <div class="value-card">
-        <h4>🍎 Native is best</h4>
-        <p>Built with SwiftUI for iPhone, iPad, and Mac. Each platform feels like home, not an afterthought.</p>
-      </div>
-      <div class="value-card">
-        <h4>♻️ Ship slowly, intentionally</h4>
-        <p>I'd rather release one polished update than ten half-baked ones. Quality over quantity.</p>
-      </div>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card1.h">🍅 Focus over features</h3>
+        <p data-i18n="about.values.card1.p"></p>
+      </article>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card2.h">🔒 Your data is yours</h3>
+        <p data-i18n="about.values.card2.p"></p>
+      </article>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card3.h">💎 Pay once, own it</h3>
+        <p data-i18n="about.values.card3.p"></p>
+      </article>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card4.h">🎨 Design matters</h3>
+        <p data-i18n="about.values.card4.p"></p>
+      </article>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card5.h">🍎 Native is best</h3>
+        <p data-i18n="about.values.card5.p"></p>
+      </article>
+      <article class="value-card">
+        <h3 data-i18n="about.values.card6.h">♻️ Ship slowly</h3>
+        <p data-i18n="about.values.card6.p"></p>
+      </article>
     </div>
 
-    <h2>The roadmap</h2>
-    <p>
-      Timerdoro is at v1.0 now — the foundation. Here's what's next:
-    </p>
+    <!-- ── Brand section: 3 marks ── -->
+    <h2 data-i18n="about.h2.brand">The Timerdoro brand</h2>
+    <p data-i18n="about.brand.intro">Timerdoro is more than software…</p>
+
+    <section class="brand-card">
+      <h3 data-i18n="about.brand.word.h">1. Word mark — „Timerdoro"</h3>
+      <p data-i18n="about.brand.word.p"></p>
+      <p class="brand-meta" data-i18n="about.brand.word.nizza"></p>
+    </section>
+
+    <section class="brand-card">
+      <h3 data-i18n="about.brand.figurative.h">2. Figurative mark — the tomato icon</h3>
+      <p data-i18n="about.brand.figurative.p"></p>
+      <figure class="brand-figure">
+        <img src="/assets/images/app-icon.png" alt="Timerdoro tomato icon" width="120" height="120" style="border-radius: 28px;">
+      </figure>
+      <p class="brand-meta" data-i18n="about.brand.figurative.nizza"></p>
+    </section>
+
+    <section class="brand-card">
+      <h3 data-i18n="about.brand.color.h">3. Colour mark — Tomato Red #EE5C52</h3>
+      <p data-i18n="about.brand.color.p"></p>
+      <div class="brand-swatch" role="img" aria-label="Colour swatch Tomato Red #EE5C52" style="background:#EE5C52;"></div>
+      <p class="brand-meta" data-i18n="about.brand.color.nizza"></p>
+    </section>
+
+    <section class="brand-card">
+      <h3 data-i18n="about.brand.research.h">Trademark conflict research</h3>
+      <p data-i18n="about.brand.research.p"></p>
+    </section>
+
+    <h2 data-i18n="about.h2.roadmap">The roadmap</h2>
+    <p data-i18n="about.roadmap.p"></p>
     <ul>
-      <li><strong>v1.1</strong> — Apple Watch app (standalone usable, syncs with iPhone)</li>
-      <li><strong>v1.1</strong> — macOS Menu Bar with quick-access timer</li>
-      <li><strong>v1.2</strong> — Live Activities &amp; Dynamic Island integration</li>
-      <li><strong>v1.2</strong> — Home Screen Widgets with interactive controls</li>
-      <li><strong>v1.3</strong> — iCloud sync across all your Apple devices</li>
-      <li><strong>v2.0</strong> — Ambient sounds &amp; Apple Health integration</li>
+      <li data-i18n="about.roadmap.li1"></li>
+      <li data-i18n="about.roadmap.li2"></li>
+      <li data-i18n="about.roadmap.li3"></li>
+      <li data-i18n="about.roadmap.li4"></li>
+      <li data-i18n="about.roadmap.li5"></li>
+      <li data-i18n="about.roadmap.li6"></li>
     </ul>
 
-    <h2>Get in touch</h2>
-    <p>
-      I read every email. Whether you have a feature request, found a bug,
-      or just want to say hi — your message will reach me directly, no support
-      bot in between. Drop a line on the <a href="../contact/index.html">contact page</a> or
-      email me at <a href="mailto:timerdoro@wudernitz.at">timerdoro@wudernitz.at</a>.
-    </p>
+    <h2 data-i18n="about.h2.contact">Get in touch</h2>
+    <p data-i18n="about.contact.p"></p>
+    <p><a href="/contact/index.html" class="btn btn-primary" data-i18n="nav.contact">Contact</a></p>
 
-    <div class="tldr-card">
-      <div class="tldr-icon">💚</div>
-      <div>
-        <div class="tldr-title">THANK YOU</div>
-        <p class="tldr-text">If you're using Timerdoro, you're directly supporting a solo indie developer's journey. That genuinely means a lot.</p>
-      </div>
-    </div>
-
+    <aside class="tldr">
+      <strong data-i18n="about.tldr.title">THANK YOU</strong>
+      <p data-i18n="about.tldr.text"></p>
+    </aside>
   </article>
 
 </main>
 
 <div id="footer-placeholder"></div>
 
-<script src="../assets/js/components.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

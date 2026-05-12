@@ -1,69 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>404 — Timerdoro</title>
-<meta name="description" content="Page not found.">
-<link rel="stylesheet" href="assets/css/style.css">
-<style>
-  .error-page {
-    min-height: calc(100vh - 80px);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 40px 24px;
-  }
-  .error-code {
-    font-size: 120px;
-    font-weight: 700;
-    background: linear-gradient(135deg, var(--tomato), var(--tomato-light));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: -3px;
-    line-height: 1;
-    margin-bottom: 14px;
-  }
-  .error-title {
-    font-size: 32px;
-    font-weight: 700;
-    margin-bottom: 12px;
-  }
-  .error-subtitle {
-    font-size: 17px;
-    color: var(--text-2);
-    margin-bottom: 32px;
-    max-width: 480px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="404.title">404 — Timerdoro</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
-<main>
-  <div class="error-page">
-    <div>
-      <div class="error-code">404</div>
-      <h1 class="error-title">Out of focus.</h1>
-      <p class="error-subtitle">
-        The page you're looking for took a longer break than planned.
-        Maybe try one of these instead?
-      </p>
-      <div class="btn-row">
-        <a href="index.html" class="btn btn-primary">← Back to Home</a>
-        <a href="contact/index.html" class="btn btn-secondary">Report broken link</a>
-      </div>
+<main id="main" tabindex="-1" class="section" style="text-align:center; padding-top: 120px;">
+  <div class="error-page" style="max-width: 600px; margin: 0 auto;">
+    <div class="error-code" style="font-size: 96px; font-weight: 800; color: var(--tomato); line-height: 1; margin-bottom: 12px;">404</div>
+    <h1 class="section-title" data-i18n="404.heading" style="margin-bottom: 16px;">Out of focus.</h1>
+    <p class="section-subtitle" data-i18n="404.subtitle">The page you're looking for took a longer break than planned.</p>
+    <div class="hero-actions" style="justify-content: center; margin-top: 32px;">
+      <a href="/index.html" class="btn btn-primary" data-i18n="404.btnHome">← Back to Home</a>
+      <a href="/contact/index.html" class="btn btn-secondary" data-i18n="404.btnReport">Report broken link</a>
     </div>
   </div>
 </main>
 
-<script src="assets/js/components.js"></script>
-<script src="assets/js/main.js"></script>
+<div id="footer-placeholder"></div>
+
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

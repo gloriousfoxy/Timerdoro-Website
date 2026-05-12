@@ -1,119 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Cookies — Timerdoro</title>
-<meta name="description" content="How Timerdoro uses (or rather: doesn't use) cookies. Spoiler: there are none.">
-<link rel="stylesheet" href="../../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="cookies.title">Cookie Policy — Timerdoro</title>
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
-<main>
+<main id="main" tabindex="-1">
+  <article class="article">
+    <header class="article-header">
+      <h1 data-i18n="cookies.h1">Cookie Policy</h1>
+      <p class="article-subtitle" data-i18n="cookies.subtitle"></p>
+      <p class="article-meta" data-i18n="cookies.lastUpdated"></p>
+    </header>
 
-  <header class="page-header">
-    <span class="eyebrow">Legal</span>
-    <h1>Cookie Policy</h1>
-    <p class="subtitle">A short, honest page about cookies on this site.</p>
-  </header>
+    <h2 data-i18n="cookies.intro.h">What are cookies?</h2>
+    <p data-i18n="cookies.intro.p"></p>
 
-  <article class="page-content">
+    <h2 data-i18n="cookies.basis.h">Legal basis</h2>
+    <p data-i18n="cookies.basis.p"></p>
 
-    <div class="tldr-card">
-      <div class="tldr-icon">🍪</div>
-      <div>
-        <div class="tldr-title">TL;DR</div>
-        <p class="tldr-text">We use one piece of local storage (not even a cookie) to remember you've seen our notice. That's it.</p>
-      </div>
-    </div>
+    <h2 data-i18n="cookies.what.h">What we actually store</h2>
+    <p data-i18n="cookies.what.intro"></p>
 
+    <table class="legal-table">
+      <thead>
+        <tr>
+          <th>Key</th>
+          <th>Purpose</th>
+          <th>Legal basis</th>
+          <th>Lifetime</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><code data-i18n="cookies.what.k1.k">timerdoro_lang</code></td>
+          <td data-i18n="cookies.what.k1.purpose"></td>
+          <td data-i18n="cookies.what.k1.legal"></td>
+          <td data-i18n="cookies.what.k1.life"></td>
+        </tr>
+        <tr>
+          <td><code data-i18n="cookies.what.k2.k">timerdoro_cookie_consent_v2</code></td>
+          <td data-i18n="cookies.what.k2.purpose"></td>
+          <td data-i18n="cookies.what.k2.legal"></td>
+          <td data-i18n="cookies.what.k2.life"></td>
+        </tr>
+      </tbody>
+    </table>
 
-    <h2>What's actually used on this website</h2>
-    <p>
-      This is not the kind of site that loads twelve trackers and pretends a
-      cookie banner makes that okay. We use exactly <strong>one</strong> entry
-      in your browser's local storage:
-    </p>
+    <h2 data-i18n="cookies.third.h">Third-party cookies</h2>
+    <p data-i18n="cookies.third.p"></p>
 
-    <div class="info-card">
-      <h3>timerdoro_cookie_acknowledged</h3>
-      <p style="margin-bottom: 0;">
-        <strong>Type:</strong> localStorage entry (not a cookie)<br>
-        <strong>Purpose:</strong> Remember you've seen our notice so we don't show it again<br>
-        <strong>Lifetime:</strong> Until you clear your browser data<br>
-        <strong>Sent to anyone:</strong> No — never leaves your browser
-      </p>
-    </div>
-
-
-    <h2>What we don't do</h2>
+    <h2 data-i18n="cookies.control.h">How to control cookies</h2>
     <ul>
-      <li>No analytics cookies (no Google Analytics, Plausible, Fathom, etc.)</li>
-      <li>No advertising cookies</li>
-      <li>No tracking pixels</li>
-      <li>No social media embeds that drop cookies</li>
-      <li>No CDN-based fingerprinting</li>
-      <li>No A/B testing tools</li>
+      <li data-i18n="cookies.control.li1"></li>
+      <li data-i18n="cookies.control.li2"></li>
+      <li data-i18n="cookies.control.li3"></li>
     </ul>
-
     <p>
-      We don't collect any analytics about who visits this site. We genuinely
-      don't know how many people read this page. If you want to tell us you
-      were here, just <a href="../../contact/index.html">say hi</a>.
+      <button type="button" class="btn btn-secondary" data-cookie-open data-i18n="cookie.openSettings">Manage preferences</button>
     </p>
-
-
-    <h2>How to remove the local storage entry</h2>
-    <p>
-      If you want to make sure even this single entry is gone:
-    </p>
-    <ul>
-      <li>Open browser settings → Privacy / Site Data → find timerdoro.wudernitz.at → Delete</li>
-      <li>Or: Open DevTools (right-click → Inspect) → Application → Local Storage → Delete the entry</li>
-      <li>Or: Use your browser's "Clear browsing data" feature</li>
-    </ul>
-
-
-    <h2>What about the Timerdoro app itself?</h2>
-    <p>
-      The app is a separate matter — and even there, we collect
-      <strong>nothing</strong>. All your session data, settings, and preferences
-      live in iOS's standard local storage on your own device. They never reach
-      any server.
-    </p>
-    <p>
-      For full details, see our <a href="../../legal/privacy/index.html">Privacy Policy</a>.
-    </p>
-
-
-    <h2>Future changes</h2>
-    <p>
-      If we ever add anything that requires actual cookies (we don't plan to),
-      we'll update this page and prominently mention it. For now: just one
-      bookkeeping entry, and that's it.
-    </p>
-
-
-    <h2>Contact</h2>
-    <p>
-      Questions about cookies, tracking, or anything privacy-related:
-      <a href="mailto:timerdoro@wudernitz.at">timerdoro@wudernitz.at</a>
-    </p>
-
-    <p style="font-size: 13px; color: var(--text-3); margin-top: 40px;">
-      Last updated: 10 May 2026
-    </p>
-
+    <p data-i18n="cookies.control.note"></p>
   </article>
-
 </main>
 
 <div id="footer-placeholder"></div>
 
-<script src="../../assets/js/components.js"></script>
-<script src="../../assets/js/main.js"></script>
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>
