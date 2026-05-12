@@ -16,4 +16,4 @@ jobs:
           username: ftp9274171_raphael
           password: ${{ secrets.FTP_PASSWORD }}
           local-dir: ./
-          server-dir: /home/.sites/60/site9274171/web/wudernitz.at/raphael/timerdoro/
+          server-dir: /timerdoro/
