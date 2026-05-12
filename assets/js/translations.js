@@ -36,11 +36,13 @@ window.TRANSLATIONS = {
     'footer.link.features': 'Features',
     'footer.link.pricing': 'Pricing',
     'footer.link.faq': 'FAQ',
+    'footer.link.privacypolicy': 'App Store Policy Privacy',
     'footer.link.beta': 'Join Beta',
     'footer.link.about': 'About',
     'footer.link.contact': 'Contact',
     'footer.link.press': 'Press Kit',
     'footer.link.privacy': 'Privacy',
+    'footer.link.ai-disclosure': "AI Disclosure",
     'footer.link.cookies': 'Cookies',
     'footer.link.impressum': 'Impressum',
     'footer.link.license': 'License (EULA)',
@@ -450,6 +452,9 @@ window.TRANSLATIONS = {
 
     /* ── Privacy Policy (EN) ── */
     'priv.title': 'Privacy Policy — Timerdoro',
+    'priv.eyebrow': 'Legal · Privacy for Apple App Store',
+    'priv.tldr.title': 'TL;DR',
+    'priv.tldr.text': "The Timerdoro app collects nothing — everything stays on your device. This website uses minimal technical data (server logs, language preference) only as required for safe operation.",
     'priv.h1': 'Privacy Policy',
     'priv.subtitle': 'How we handle data on this website. Under EU General Data Protection Regulation (GDPR) and Austrian Data Protection Act (DSG).',
     'priv.lastUpdated': 'Last updated: May 2026',
@@ -651,6 +656,53 @@ window.TRANSLATIONS = {
     'acc.tech.li2': 'Screen readers: VoiceOver (macOS / iOS), NVDA (Windows), TalkBack (Android)',
     'acc.tech.li3': 'Operating systems: macOS 13+, iOS 17+, iPadOS 17+, Windows 10+, recent Linux distros',
     'acc.tech.li4': 'Assistive tech: keyboard navigation, voice control, screen magnification',
+
+    /* -- AI Disclosure -- */
+    // =========================
+    'ai.title': 'AI-Generated Content — Timerdoro',
+    'ai.metaDesc': 'Transparency notice about the use of AI tools in the development of the Timerdoro website.',
+
+    'ai.eyebrow': 'Legal · Transparency',
+    'ai.heading': 'AI-Generated Content',
+    'ai.subtitle': 'How and where AI tools were used in building this website — and what that means for you.',
+    'ai.meta': 'Effective: May 2026 · Applies to: timerdoro.wudernitz.at',
+
+    'ai.tldr.title': 'TL;DR',
+    'ai.tldr.text': 'Parts of this website\'s code — specifically HTML, CSS, and JavaScript — were written with the assistance of Claude, an AI model by Anthropic. All output was reviewed, adapted, and approved by a human developer before publication. No AI-generated text, copy, or images are present on this site.',
+
+    'ai.generated.title': 'What was generated with AI',
+    'ai.generated.intro': 'During the development of this website, <strong>Claude by Anthropic</strong> was used as a coding assistant. Specifically, AI assistance was applied to:',
+    'ai.generated.li1': 'Structural HTML markup for page templates and components',
+    'ai.generated.li2': 'CSS styling, layout logic, and design system code',
+    'ai.generated.li3': 'JavaScript for interactive UI elements and utility functions',
+    'ai.generated.outro': 'The app name, product copy, pricing, feature descriptions, and all other written content on this site were created by the developer without AI assistance.',
+
+    'ai.notGenerated.title': 'What was not AI-generated',
+    'ai.notGenerated.li1': 'Product name, brand identity, and visual design direction',
+    'ai.notGenerated.li2': 'All marketing copy, feature descriptions, and headlines',
+    'ai.notGenerated.li3': 'App screenshots and product imagery',
+    'ai.notGenerated.li4': 'Legal documents (privacy policy, imprint, etc.)',
+    'ai.notGenerated.li5': 'The Timerdoro app itself (built natively in SwiftUI)',
+
+    'ai.review.title': 'Human review and accountability',
+    'ai.review.p1': 'Every piece of AI-assisted code was reviewed, tested, and — where necessary — substantially modified by the developer before going live. The use of AI assistance does not diminish accountability: the developer remains fully responsible for all content published on this website.',
+    'ai.review.p2': 'AI output was treated as a draft or starting point, not a finished product. Final decisions about design, structure, and behaviour were always made by a human.',
+
+    'ai.tool.title': 'About the AI tool used',
+    'ai.tool.cardTitle': 'Claude by Anthropic',
+    'ai.tool.p1': 'Claude is an AI assistant developed by Anthropic, PBC. It was accessed via the Claude.ai web interface and the Anthropic API. According to Anthropic\'s Terms of Service, users retain full ownership of their outputs — Anthropic makes no intellectual property claims over content generated through its services.',
+    'ai.tool.policies': 'Relevant Anthropic policies:',
+    'ai.tool.policy1': 'Anthropic Acceptable Use Policy',
+    'ai.tool.policy2': 'Anthropic Consumer Terms of Service',
+    'ai.tool.policy3': 'Anthropic Privacy Policy',
+
+    'ai.eu.title': 'Legal basis and EU AI Act',
+    'ai.eu.p1': 'This disclosure is provided voluntarily in the spirit of transparency and in anticipation of obligations under the EU AI Act (Regulation (EU) 2024/1689), which entered into force in August 2024 and introduces transparency requirements for certain AI-generated and AI-assisted content.',
+    'ai.eu.p2': 'The AI tools used in this project fall under the category of general-purpose AI systems. Their use was limited to code generation for development purposes and did not involve processing of any user data or personal information.',
+
+    'ai.questions.title': 'Questions or concerns',
+    'ai.questions.text': 'If you have questions about the use of AI tools on this website, feel free to reach out via the contact page.',
+    'ai.questions.contact': 'contact page',
   },
 
   /* ─────────────────────────────────────────── */
@@ -678,11 +730,13 @@ window.TRANSLATIONS = {
     'footer.link.features': 'Funktionen',
     'footer.link.pricing': 'Preise',
     'footer.link.faq': 'FAQ',
+    'footer.link.privacypolicy': 'Datenschutz Privacy Policy',
     'footer.link.beta': 'Beta beitreten',
     'footer.link.about': 'Über uns',
     'footer.link.contact': 'Kontakt',
     'footer.link.press': 'Pressemappe',
     'footer.link.privacy': 'Datenschutz',
+    'footer.link.ai-disclosure': 'KI-Hinweis',
     'footer.link.cookies': 'Cookies',
     'footer.link.impressum': 'Impressum',
     'footer.link.license': 'Lizenz (EULA)',
@@ -1088,6 +1142,9 @@ window.TRANSLATIONS = {
 
     /* ── Datenschutz (DE) ── */
     'priv.title': 'Datenschutzerklärung — Timerdoro',
+    'priv.eyebrow': 'Rechtliches · Datenschutz',
+    'priv.tldr.title': 'Kurzfassung',
+    'priv.tldr.text': 'Die Timerdoro-App erhebt keinerlei Daten — alles bleibt auf deinem Gerät. Diese Website nutzt nur minimale technische Daten (Server-Logs, Spracheinstellung), die für den sicheren Betrieb notwendig sind.',
     'priv.h1': 'Datenschutzerklärung',
     'priv.subtitle': 'Wie wir Daten auf dieser Website behandeln. Nach EU-Datenschutz-Grundverordnung (DSGVO) und österreichischem Datenschutzgesetz (DSG).',
     'priv.lastUpdated': 'Zuletzt aktualisiert: Mai 2026',
@@ -1289,5 +1346,58 @@ window.TRANSLATIONS = {
     'acc.tech.li2': 'Screenreader: VoiceOver (macOS / iOS), NVDA (Windows), TalkBack (Android)',
     'acc.tech.li3': 'Betriebssysteme: macOS 13+, iOS 17+, iPadOS 17+, Windows 10+, aktuelle Linux-Distros',
     'acc.tech.li4': 'Assistierende Technologien: Tastaturnavigation, Sprachsteuerung, Bildschirmvergrößerung',
+
+    /* -- KI Hinweis -- */
+
+    // =========================
+// GERMAN
+// =========================
+
+// AI Disclosure
+    'ai.title': 'KI-generierte Inhalte',
+    'ai.metaDesc': 'Transparenzhinweis zur Nutzung von KI-Tools bei der Entwicklung der Timerdoro-Website.',
+
+    'ai.eyebrow': 'Rechtliches · Transparenz',
+    'ai.heading': 'KI-generierte Inhalte',
+    'ai.subtitle': 'Wie und wo KI-Tools beim Erstellen dieser Website verwendet wurden — und was das für dich bedeutet.',
+    'ai.meta': 'Gültig ab: Mai 2026 · Gilt für: timerdoro.wudernitz.at',
+
+    'ai.tldr.title': 'Kurzfassung',
+    'ai.tldr.text': 'Teile des Codes dieser Website — insbesondere HTML, CSS und JavaScript — wurden mit Unterstützung von Claude, einem KI-Modell von Anthropic, erstellt. Alle Ergebnisse wurden vor der Veröffentlichung von einem menschlichen Entwickler geprüft, angepasst und freigegeben. Auf dieser Website befinden sich keine KI-generierten Texte, Werbeinhalte oder Bilder.',
+
+    'ai.generated.title': 'Was mit KI erstellt wurde',
+    'ai.generated.intro': 'Während der Entwicklung dieser Website wurde Claude von Anthropic als Programmierhilfe verwendet. KI-Unterstützung kam insbesondere bei folgenden Bereichen zum Einsatz:',
+    'ai.generated.li1': 'Strukturelles HTML-Markup für Seitenvorlagen und Komponenten',
+    'ai.generated.li2': 'CSS-Styling, Layout-Logik und Design-System-Code',
+    'ai.generated.li3': 'JavaScript für interaktive UI-Elemente und Hilfsfunktionen',
+    'ai.generated.outro': 'Der App-Name, Produkttexte, Preise, Feature-Beschreibungen und alle weiteren Inhalte dieser Website wurden ohne KI-Unterstützung vom Entwickler erstellt.',
+
+    'ai.notGenerated.title': 'Was nicht KI-generiert ist',
+    'ai.notGenerated.li1': 'Produktname, Markenidentität und visuelle Designrichtung',
+    'ai.notGenerated.li2': 'Alle Marketingtexte, Feature-Beschreibungen und Überschriften',
+    'ai.notGenerated.li3': 'App-Screenshots und Produktbilder',
+    'ai.notGenerated.li4': 'Rechtliche Dokumente (Datenschutzerklärung, Impressum usw.)',
+    'ai.notGenerated.li5': 'Die Timerdoro-App selbst (nativ in SwiftUI entwickelt)',
+
+    'ai.review.title': 'Menschliche Prüfung und Verantwortung',
+    'ai.review.p1': 'Jeder KI-unterstützte Codeabschnitt wurde vor der Veröffentlichung geprüft, getestet und — falls notwendig — wesentlich überarbeitet. Die Nutzung von KI-Unterstützung verringert nicht die Verantwortung: Der Entwickler bleibt vollständig für alle Inhalte dieser Website verantwortlich.',
+    'ai.review.p2': 'KI-Ausgaben wurden als Entwurf oder Ausgangspunkt betrachtet, nicht als fertiges Produkt. Endgültige Entscheidungen zu Design, Struktur und Verhalten wurden immer von einem Menschen getroffen.',
+
+    'ai.tool.title': 'Über das verwendete KI-Tool',
+    'ai.tool.cardTitle': 'Claude von Anthropic',
+    'ai.tool.p1': 'Claude ist ein KI-Assistent von Anthropic, PBC. Der Zugriff erfolgte über die Claude.ai-Weboberfläche sowie die Anthropic API. Laut den Nutzungsbedingungen von Anthropic behalten Nutzer sämtliche Rechte an ihren Ergebnissen — Anthropic erhebt keine Ansprüche auf geistiges Eigentum an generierten Inhalten.',
+    'ai.tool.policies': 'Relevante Richtlinien von Anthropic:',
+    'ai.tool.policy1': 'Anthropic Acceptable Use Policy',
+    'ai.tool.policy2': 'Anthropic Consumer Terms of Service',
+    'ai.tool.policy3': 'Anthropic Privacy Policy',
+
+    'ai.eu.title': 'Rechtliche Grundlage und EU AI Act',
+    'ai.eu.p1': 'Dieser Hinweis erfolgt freiwillig im Sinne der Transparenz und im Hinblick auf Verpflichtungen aus dem EU AI Act (Verordnung (EU) 2024/1689), der im August 2024 in Kraft trat und Transparenzpflichten für bestimmte KI-generierte und KI-unterstützte Inhalte einführt.',
+    'ai.eu.p2': 'Die in diesem Projekt verwendeten KI-Tools fallen in die Kategorie allgemeiner KI-Systeme. Ihre Nutzung beschränkte sich auf Codegenerierung zu Entwicklungszwecken und beinhaltete keine Verarbeitung von Nutzerdaten oder personenbezogenen Informationen.',
+
+    'ai.questions.title': 'Fragen oder Anliegen',
+    'ai.questions.text': 'Wenn du Fragen zur Nutzung von KI-Tools auf dieser Website hast, kannst du uns gerne über die Kontaktseite erreichen.',
+    'ai.questions.contact': 'Kontaktseite',
+
   },
 };

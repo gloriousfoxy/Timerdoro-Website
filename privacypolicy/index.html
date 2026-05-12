@@ -1,385 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Timerdoro — Privacy Policy</title>
-<meta name="description" content="Timerdoro privacy policy. We don't collect your data. Everything stays on your device.">
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  :root {
-    --tomato: #ee5c52;
-    --tomato-glow: rgba(238, 92, 82, 0.25);
-    --bg-top: #211414;
-    --bg-bottom: #0a0606;
-    --card: rgba(255, 255, 255, 0.04);
-    --card-border: rgba(255, 255, 255, 0.08);
-    --text: rgba(255, 255, 255, 0.92);
-    --text-secondary: rgba(255, 255, 255, 0.55);
-    --text-tertiary: rgba(255, 255, 255, 0.35);
-  }
-
-  html, body {
-    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-bottom) 100%);
-    color: var(--text);
-    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Rounded", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
-    min-height: 100vh;
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-  }
-
-  body {
-    display: flex;
-    justify-content: center;
-    padding: 40px 20px 80px;
-  }
-
-  /* Ambient glow */
-  body::before {
-    content: '';
-    position: fixed;
-    top: -100px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 500px;
-    height: 500px;
-    background: radial-gradient(circle, var(--tomato-glow) 0%, transparent 70%);
-    filter: blur(60px);
-    pointer-events: none;
-    z-index: 0;
-  }
-
-  .container {
-    width: 100%;
-    max-width: 720px;
-    position: relative;
-    z-index: 1;
-  }
-
-  header {
-    text-align: center;
-    margin-bottom: 48px;
-  }
-
-  .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 22px;
-    font-weight: 700;
-    margin-bottom: 8px;
-    letter-spacing: -0.3px;
-  }
-
-  .logo-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 8px;
-    background: var(--tomato);
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 16px var(--tomato-glow);
-  }
-
-  .logo-icon::before {
-    content: '🍅';
-    font-size: 16px;
-  }
-
-  h1 {
-    font-size: 36px;
-    font-weight: 700;
-    letter-spacing: -0.5px;
-    margin-bottom: 8px;
-  }
-
-  .last-updated {
-    color: var(--text-tertiary);
-    font-size: 13px;
-    font-weight: 500;
-  }
-
-  .tldr {
-    background: linear-gradient(135deg, rgba(238, 92, 82, 0.12), rgba(238, 92, 82, 0.04));
-    border: 1px solid rgba(238, 92, 82, 0.2);
-    border-radius: 16px;
-    padding: 20px 24px;
-    margin-bottom: 36px;
-    display: flex;
-    align-items: flex-start;
-    gap: 14px;
-  }
-
-  .tldr-icon {
-    flex-shrink: 0;
-    width: 32px;
-    height: 32px;
-    border-radius: 10px;
-    background: rgba(238, 92, 82, 0.18);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 16px;
-  }
-
-  .tldr-content {
-    flex: 1;
-  }
-
-  .tldr-title {
-    font-size: 11px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    color: var(--tomato);
-    margin-bottom: 4px;
-  }
-
-  .tldr-text {
-    font-size: 15px;
-    font-weight: 500;
-    color: var(--text);
-  }
-
-  section {
-    background: var(--card);
-    border: 1px solid var(--card-border);
-    border-radius: 18px;
-    padding: 24px 28px;
-    margin-bottom: 16px;
-  }
-
-  h2 {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 12px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    letter-spacing: -0.2px;
-  }
-
-  h2 .num {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 24px;
-    height: 24px;
-    background: rgba(238, 92, 82, 0.15);
-    color: var(--tomato);
-    border-radius: 7px;
-    font-size: 12px;
-    font-weight: 700;
-  }
-
-  p {
-    color: var(--text-secondary);
-    font-size: 15px;
-    margin-bottom: 12px;
-  }
-
-  p:last-child { margin-bottom: 0; }
-
-  ul {
-    list-style: none;
-    margin: 12px 0;
-  }
-
-  ul li {
-    color: var(--text-secondary);
-    font-size: 15px;
-    padding: 4px 0 4px 20px;
-    position: relative;
-  }
-
-  ul li::before {
-    content: '';
-    position: absolute;
-    left: 4px;
-    top: 14px;
-    width: 6px;
-    height: 6px;
-    background: var(--tomato);
-    border-radius: 50%;
-    opacity: 0.7;
-  }
-
-  strong {
-    color: var(--text);
-    font-weight: 600;
-  }
-
-  a {
-    color: var(--tomato);
-    text-decoration: none;
-    font-weight: 500;
-    border-bottom: 1px dotted rgba(238, 92, 82, 0.4);
-    transition: border 0.2s;
-  }
-
-  a:hover {
-    border-bottom: 1px solid var(--tomato);
-  }
-
-  .check {
-    color: #4ade80;
-    font-weight: 600;
-  }
-
-  .cross {
-    color: #f87171;
-    font-weight: 600;
-  }
-
-  footer {
-    text-align: center;
-    margin-top: 48px;
-    color: var(--text-tertiary);
-    font-size: 13px;
-  }
-
-  footer .heart {
-    color: var(--tomato);
-  }
-
-  @media (max-width: 600px) {
-    h1 { font-size: 28px; }
-    section { padding: 20px 22px; }
-    .tldr { padding: 16px 20px; }
-  }
-</style>
+  <title>Privacy Policy — Timerdoro</title>
+  <meta name="description" content="Timerdoro privacy policy. We don't collect your data. Everything stays on your device.">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    /* Local helpers used only on this page */
+    .num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 28px; height: 28px;
+      border-radius: 8px;
+      background: var(--tomato-soft);
+      color: var(--tomato);
+      font-size: 13px;
+      font-weight: 700;
+      margin-right: 12px;
+      vertical-align: middle;
+    }
+    .check { color: var(--green); font-weight: 700; margin-right: 4px; }
+    .cross { color: #f87171; font-weight: 700; margin-right: 4px; }
+    /* Hide the default orange bullet when a row already has a ✓ / ✗ marker */
+    .article ul.marker-list li { padding-left: 0; }
+    .article ul.marker-list li::before { display: none; }
+  </style>
 </head>
 <body>
-<div class="container">
 
-  <header>
-    <div class="logo">
-      <span class="logo-icon"></span>
-      Timerdoro
-    </div>
-    <h1>Privacy Policy</h1>
-    <div class="last-updated">Last updated: May 10, 2026</div>
-  </header>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div id="nav-placeholder"></div>
 
-  <div class="tldr">
-    <div class="tldr-icon">🔒</div>
-    <div class="tldr-content">
-      <div class="tldr-title">TL;DR</div>
-      <div class="tldr-text">
-        Timerdoro doesn't collect, sell, or transmit your personal data.
-        Everything stays on your device.
+<main id="main">
+  <article class="article">
+
+    <header class="article-header">
+      <span class="eyebrow">Legal · Privacy for Apple App Store</span>
+      <h1>Privacy Policy</h1>
+      <p class="article-meta">Last updated: May 10, 2026 (English only)</p>
+    </header>
+
+    <div class="tldr-card">
+      <div class="tldr-icon">🔒</div>
+      <div>
+        <div class="tldr-title">TL;DR</div>
+        <p class="tldr-text">Timerdoro doesn't collect, sell, or transmit your personal data. Everything stays on your device.</p>
       </div>
     </div>
-  </div>
 
-  <section>
-    <h2><span class="num">1</span>What Data We Collect</h2>
-    <p>
-      <span class="check">✓</span> <strong>Nothing.</strong>
-    </p>
-    <p>
-      Timerdoro is a fully local app. We don't operate servers, we don't have
-      analytics, and we don't run any tracking.
-    </p>
-    <p>
-      All your data — focus sessions, statistics, settings, themes, tags —
-      is stored exclusively on your device using Apple's standard storage APIs.
-    </p>
-  </section>
+    <div class="section-privacy-policy">
+      <h2><span class="num">1</span>What Data We Collect</h2>
+      <p><span class="check">✓</span><strong>Nothing.</strong></p>
+      <p>Timerdoro is a fully local app. We don't operate servers, we don't have analytics, and we don't run any tracking.</p>
+      <p>All your data — focus sessions, statistics, settings, themes, tags — is stored exclusively on your device using Apple's standard storage APIs.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">2</span>What We Don't Do</h2>
+      <ul class="marker-list">
+        <li><span class="cross">✗</span>No accounts, no sign-ups, no logins</li>
+        <li><span class="cross">✗</span>No third-party analytics (no Firebase, Mixpanel, etc.)</li>
+        <li><span class="cross">✗</span>No advertising, no ad networks, no ad tracking</li>
+        <li><span class="cross">✗</span>No data sold or shared with anyone</li>
+        <li><span class="cross">✗</span>No location tracking</li>
+        <li><span class="cross">✗</span>No data leaves your device</li>
+      </ul>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">3</span>In-App Purchases</h2>
+      <p>Timerdoro offers a one-time Pro upgrade through Apple's App Store. The purchase itself is processed by <strong>Apple</strong>, not by us.</p>
+      <p>We never see or store your payment information. Apple handles billing, receipts, and refunds according to their <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Standard Terms</a>.</p>
+      <p>To verify your Pro status, the app uses Apple's StoreKit framework locally on your device. No purchase data is sent to us.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">4</span>System Permissions</h2>
+      <p>Timerdoro requests the following system permissions only when needed:</p>
+      <ul>
+        <li><strong>Notifications</strong> — to alert you when a timer completes. You can revoke this anytime in iOS Settings.</li>
+        <li><strong>Haptic feedback</strong> — to provide gentle touch feedback during timer events. Toggleable in app settings.</li>
+      </ul>
+      <p>No other permissions are requested. No camera, no microphone, no contacts, no photos.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">5</span>Children's Privacy</h2>
+      <p>Since Timerdoro doesn't collect any personal information from anyone, it inherently complies with children's privacy laws including COPPA and Apple's Kids Category guidelines.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">6</span>Data You Export</h2>
+      <p>Pro users can export their session statistics as a CSV file. This file is generated locally on your device — what happens to it after that (where you save it, who you share it with) is entirely up to you.</p>
+      <p>We never see this file. It never reaches any server.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">7</span>Changes to This Policy</h2>
+      <p>If this policy changes in the future (for example if we ever add an optional cloud-sync feature), we'll update this page and post a notice in the app. The "Last updated" date at the top will reflect the latest revision.</p>
+      <p>Material changes that affect data handling will require your explicit consent before taking effect.</p>
+    </div>
+    <div class="section-privacy-policy">
+      <h2><span class="num">8</span>Contact</h2>
+      <p>Questions, concerns, or feedback about privacy?</p>
+      <p>Reach out at <a href="mailto:timerdoro@wudernitz.at">timerdoro@wudernitz.at</a></p>
+    </div>
+  </article>
+</main>
 
-  <section>
-    <h2><span class="num">2</span>What We Don't Do</h2>
-    <ul>
-      <li><span class="cross">✗</span> No accounts, no sign-ups, no logins</li>
-      <li><span class="cross">✗</span> No third-party analytics (no Firebase, Mixpanel, etc.)</li>
-      <li><span class="cross">✗</span> No advertising, no ad networks, no ad tracking</li>
-      <li><span class="cross">✗</span> No data sold or shared with anyone</li>
-      <li><span class="cross">✗</span> No location tracking</li>
-      <li><span class="cross">✗</span> No data leaves your device</li>
-    </ul>
-  </section>
+<div id="footer-placeholder"></div>
 
-  <section>
-    <h2><span class="num">3</span>In-App Purchases</h2>
-    <p>
-      Timerdoro offers a one-time Pro upgrade through Apple's App Store.
-      The purchase itself is processed by <strong>Apple</strong>, not by us.
-    </p>
-    <p>
-      We never see or store your payment information. Apple handles billing,
-      receipts, and refunds according to their
-      <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" target="_blank" rel="noopener">Standard Terms</a>.
-    </p>
-    <p>
-      To verify your Pro status, the app uses Apple's StoreKit framework
-      locally on your device. No purchase data is sent to us.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="num">4</span>System Permissions</h2>
-    <p>Timerdoro requests the following system permissions only when needed:</p>
-    <ul>
-      <li><strong>Notifications</strong> — to alert you when a timer completes. You can revoke this anytime in iOS Settings.</li>
-      <li><strong>Haptic feedback</strong> — to provide gentle touch feedback during timer events. Toggleable in app settings.</li>
-    </ul>
-    <p>No other permissions are requested. No camera, no microphone, no contacts, no photos.</p>
-  </section>
-
-  <section>
-    <h2><span class="num">5</span>Children's Privacy</h2>
-    <p>
-      Since Timerdoro doesn't collect any personal information from anyone,
-      it inherently complies with children's privacy laws including COPPA and
-      Apple's Kids Category guidelines.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="num">6</span>Data You Export</h2>
-    <p>
-      Pro users can export their session statistics as a CSV file. This file
-      is generated locally on your device — what happens to it after that
-      (where you save it, who you share it with) is entirely up to you.
-    </p>
-    <p>
-      We never see this file. It never reaches any server.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="num">7</span>Changes to This Policy</h2>
-    <p>
-      If this policy changes in the future (for example if we ever add an
-      optional cloud-sync feature), we'll update this page and post a notice
-      in the app. The "Last updated" date at the top will reflect the latest
-      revision.
-    </p>
-    <p>
-      Material changes that affect data handling will require your explicit
-      consent before taking effect.
-    </p>
-  </section>
-
-  <section>
-    <h2><span class="num">8</span>Contact</h2>
-    <p>
-      Questions, concerns, or feedback about privacy?
-    </p>
-    <p>
-      Reach out at <a href="mailto:raphael@wudernitz.at">raphael@wudernitz.at</a>
-    </p>
-  </section>
-
-  <footer>
-    Made with <span class="heart">♥</span> by an indie developer in Vienna, Austria
-  </footer>
-
-</div>
+<script src="../assets/js/components.js"></script>
+<script src="../assets/js/main.js"></script>
 </body>
 </html>
