@@ -1,95 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Contact — Timerdoro</title>
-<meta name="description" content="Get in touch with Timerdoro. Email support, beta feedback, press inquiries — direct contact.">
-<link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="contact.title">Contact — Timerdoro</title>
+  <meta name="description" content="Contact Timerdoro: bug reports, feature requests, press inquiries, or just say hi. A real human will reply.">
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 <body>
 
 <div id="nav-placeholder"></div>
 
-<main>
+<main id="main" tabindex="-1">
 
-  <header class="page-header">
-    <span class="eyebrow">Contact</span>
-    <h1>Let's talk.</h1>
-    <p class="subtitle">No support bots. No ticket queues. Just a direct line to the developer.</p>
-  </header>
+  <article class="article">
+    <header class="article-header">
+      <span class="eyebrow" data-i18n="contact.eyebrow">Contact</span>
+      <h1 data-i18n="contact.h1">Let's talk.</h1>
+      <p class="article-subtitle" data-i18n="contact.subtitle"></p>
+    </header>
 
-  <article class="page-content">
-
-    <p>
-      Whether you've found a bug, have a feature request, want to write
-      about Timerdoro, or just want to share what you think — your email
-      lands in my inbox and I reply to every one. Usually within 24 hours.
-    </p>
+    <p data-i18n="contact.intro"></p>
 
     <div class="contact-grid">
-      <a class="contact-card" href="mailto:raphael@wudernitz.at">
-        <div class="contact-icon">✉️</div>
-        <h3>General &amp; Support</h3>
-        <p class="contact-detail">raphael@wudernitz.at</p>
-      </a>
-
-      <a class="contact-card" href="mailto:raphael@wudernitz.at">
-        <div class="contact-icon">🧪</div>
-        <h3>Beta Feedback</h3>
-        <p class="contact-detail">raphael@wudernitz.at</p>
-      </a>
-
-      <a class="contact-card" href="mailto:raphael@wudernitz.at">
-        <div class="contact-icon">📰</div>
-        <h3>Press Inquiries</h3>
-        <p class="contact-detail">raphael@wudernitz.at</p>
-      </a>
-
-      <a class="contact-card" href="mailto:raphael@wudernitz.at">
-        <div class="contact-icon">⚖️</div>
-        <h3>Legal &amp; Privacy</h3>
-        <p class="contact-detail">raphael@wudernitz.at</p>
-      </a>
+      <article class="contact-card">
+        <h3 data-i18n="contact.card1.h">General &amp; Support</h3>
+        <a href="mailto:timerdoro@wudernitz.at">timerdoro@wudernitz.at</a>
+      </article>
+      <article class="contact-card">
+        <h3 data-i18n="contact.card2.h">Beta Feedback</h3>
+        <a href="mailto:timerdoro@wudernitz.at?subject=Beta%20Feedback">timerdoro@wudernitz.at</a>
+      </article>
+      <article class="contact-card">
+        <h3 data-i18n="contact.card3.h">Press Inquiries</h3>
+        <a href="mailto:timerdoro@wudernitz.at?subject=Press%20Inquiry">timerdoro@wudernitz.at</a>
+      </article>
+      <article class="contact-card">
+        <h3 data-i18n="contact.card4.h">Legal &amp; Privacy</h3>
+        <a href="mailto:timerdoro@wudernitz.at?subject=Legal%2FPrivacy">timerdoro@wudernitz.at</a>
+      </article>
     </div>
 
-    <h2>Where to find me online</h2>
-    <p>I'm a one-person team, so I keep things simple:</p>
-    <ul>
-      <li><strong>Instagram:</strong> <a href="#">@roffl0809</a> (not really active)</li>
-      <li><strong>Reddit:</strong> Posts about Timerdoro on r/iOSProgramming, r/SwiftUI, r/iOSBeta</li>
-      <li><strong>GitHub:</strong> <a href="#">github.com/gloriousfoxy</a></li>
-      <li><strong>App Store:</strong> Coming soon</li>
-    </ul>
+    <!-- ── Mock contact form ── -->
+    <h2 data-i18n="contact.form.h2">Or use the contact form</h2>
+    <p class="contact-form-intro" data-i18n="contact.form.intro"></p>
 
-    <h2>Response times</h2>
-    <p>
-      Realistic expectations: I'm a CS student building this solo, so I'm
-      not staffed 24/7. Here's roughly what to expect:
-    </p>
-    <ul>
-      <li><strong>Bug reports:</strong> typically within 24 hours</li>
-      <li><strong>Feature requests:</strong> 1-3 days (with proper consideration)</li>
-      <li><strong>Press inquiries:</strong> 1-2 days</li>
-      <li><strong>Legal/privacy questions:</strong> within 48 hours</li>
-    </ul>
+    <form id="contact-form" class="contact-form" novalidate>
+      <div class="contact-form-fields">
+        <div class="form-row">
+          <div class="form-field">
+            <label for="cf-name" data-i18n="contact.form.name">Your name</label>
+            <input id="cf-name" type="text" required autocomplete="name"
+                   placeholder="Jane Doe" data-i18n-attr="placeholder:contact.form.namePh">
+          </div>
+          <div class="form-field">
+            <label for="cf-email" data-i18n="contact.form.email">Your email</label>
+            <input id="cf-email" type="email" required autocomplete="email"
+                   placeholder="jane@example.com" data-i18n-attr="placeholder:contact.form.emailPh">
+          </div>
+        </div>
 
-    <div class="tldr-card">
-      <div class="tldr-icon">💌</div>
-      <div>
-        <div class="tldr-title">FAIR WARNING</div>
-        <p class="tldr-text">If you write something rude, I'll read it and reply politely once. If you write something thoughtful, you'll likely get a real conversation back.</p>
+        <div class="form-field">
+          <label for="cf-subject" data-i18n="contact.form.subject">Subject</label>
+          <input id="cf-subject" type="text" required
+                 placeholder="What's this about?" data-i18n-attr="placeholder:contact.form.subjectPh">
+        </div>
+
+        <div class="form-field">
+          <label for="cf-category" data-i18n="contact.form.category">Category</label>
+          <select id="cf-category" required>
+            <option value="general" data-i18n="contact.form.catGeneral">General question</option>
+            <option value="bug" data-i18n="contact.form.catBug">Bug report</option>
+            <option value="feature" data-i18n="contact.form.catFeature">Feature request</option>
+            <option value="press" data-i18n="contact.form.catPress">Press inquiry</option>
+            <option value="legal" data-i18n="contact.form.catLegal">Legal / Privacy</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label for="cf-message" data-i18n="contact.form.message">Your message</label>
+          <textarea id="cf-message" rows="6" required
+                    placeholder="Tell me what's on your mind…" data-i18n-attr="placeholder:contact.form.messagePh"></textarea>
+        </div>
+
+        <label class="form-consent">
+          <input type="checkbox" id="cf-consent" required>
+          <span>
+            <span data-i18n="contact.form.consent">I agree that my data may be processed to respond to my message (see </span><a href="/legal/privacy/index.html" data-i18n="contact.form.consentLink">privacy policy</a><span data-i18n="contact.form.consentEnd">).</span>
+          </span>
+        </label>
+
+        <button type="submit" class="form-submit" data-i18n="contact.form.submit">Send message</button>
       </div>
-    </div>
 
+      <div id="contact-form-success" class="form-success" role="status" aria-live="polite">
+        <p data-i18n="contact.form.success"></p>
+      </div>
+    </form>
+
+    <h2 data-i18n="contact.online.h2">Where to find me online</h2>
+    <p data-i18n="contact.online.intro"></p>
+    <ul>
+      <li data-i18n="contact.online.li1"></li>
+      <li data-i18n="contact.online.li2"></li>
+      <li data-i18n="contact.online.li3"></li>
+      <li data-i18n="contact.online.li4"></li>
+    </ul>
+
+    <h2 data-i18n="contact.response.h2">Response times</h2>
+    <p data-i18n="contact.response.intro"></p>
+    <ul>
+      <li data-i18n="contact.response.li1"></li>
+      <li data-i18n="contact.response.li2"></li>
+      <li data-i18n="contact.response.li3"></li>
+      <li data-i18n="contact.response.li4"></li>
+    </ul>
+
+    <aside class="tldr">
+      <strong data-i18n="contact.tldr.title">FAIR WARNING</strong>
+      <p data-i18n="contact.tldr.text"></p>
+    </aside>
   </article>
 
 </main>
 
 <div id="footer-placeholder"></div>
 
-<script src="../assets/js/components.js"></script>
-<script src="../assets/js/main.js"></script>
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
 </body>
 </html>

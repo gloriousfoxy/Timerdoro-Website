@@ -1,96 +1,113 @@
-# 🍅 Timerdoro — Website
+# Timerdoro — Website
 
-The marketing website for **Timerdoro**, a beautiful, privacy-first Pomodoro timer for iPhone, iPad, and Mac.
+A bilingual (DE/EN) marketing & legal site for the Timerdoro Pomodoro app.
+Production site → https://timerdoro.wudernitz.at
 
-> Live: [raphael.wudernitz.at/raphael/timerdoro](https://raphael.wudernitz.at/raphael/timerdoro)
+## What this is
 
----
+Two things in one repository:
 
-## Pages
+1. The **real product website** for Timerdoro (Beta in TestFlight)
+2. A **complete LVA submission** mapped to six university tasks
 
-| Route | Description |
-|---|---|
-| `/` | Landing page — hero, features, pricing |
-| `/about/` | The story behind Timerdoro |
-| `/faq/` | Frequently asked questions |
-| `/press/` | Press kit & brand assets |
-| `/contact/` | Contact information |
-| `/legal/privacy/` | Privacy policy |
-| `/legal/impressum/` | Impressum (Austrian law) |
-| `/legal/cookies/` | Cookie policy |
-| `/404.html` | Custom 404 page |
+## LVA-Aufgaben — Mapping
 
----
+| Aufgabe                                       | Wo gelöst                                                 |
+|-----------------------------------------------|------------------------------------------------------------|
+| **1.** Barrierefreiheit (WCAG 2.2 AA)         | `legal/accessibility/index.html` + Skip-Link in `components.js` + Kontrast-Fixes in `style.css` |
+| **2.** Urheberrecht / Quellen & Lizenzen      | `legal/credits/index.html` — mit echtem Audio + animiertem SVG |
+| **3.** Marke (Wort/Bild/Farbe + Nizza-Klassen)| `about/index.html` — Brand-Section mit drei Marken         |
+| **4.** Lizenzbestimmungen (EULA)              | `legal/license/index.html` — 10 Sektionen nach KSchG/ABGB/UrhG |
+| **5.** Datenschutz + Cookies (DSGVO)          | `legal/privacy/index.html` + `legal/cookies/index.html` + Mock-Banner in `main.js` |
+| **6.** Gewerbe / Impressum / Kontaktformular  | `legal/impressum/index.html` + `contact/index.html` (Mock-Formular) |
 
-## Structure
+## File structure
 
 ```
 timerdoro/
-├── index.html
-├── 404.html
-├── about/
-│   └── index.html
-├── contact/
-│   └── index.html
-├── faq/
-│   └── index.html
-├── press/
-│   └── index.html
-├── legal/
-│   ├── privacy/index.html
-│   ├── impressum/index.html
-│   └── cookies/index.html
-└── assets/
-    ├── css/
-    │   └── style.css
-    ├── js/
-    │   ├── components.js   ← shared nav & footer
-    │   └── main.js         ← nav toggle, active links, cookie banner
-    └── images/
-        └── app-icon.png
+├── index.html                       Landing page (new per-platform showcase)
+├── 404.html                         Not-found page
+├── README.md                        This file
+├── about/index.html                 Team + Brand (3 Markenformen)
+├── contact/index.html               Email + Mock contact form
+├── faq/index.html                   15 Q&A
+├── press/index.html                 Press kit
+└── legal/
+    ├── privacy/index.html           DSGVO Datenschutz
+    ├── cookies/index.html           Cookie-Policy mit Kategorien
+    ├── impressum/index.html         § 5 ECG / § 25 MedienG
+    ├── license/index.html           EULA (KSchG/ABGB/UrhG)
+    ├── credits/index.html           Urheberrecht-Doku mit Audio/SVG
+    └── accessibility/index.html     Barrierefreiheitserklärung
 ```
 
-### Key architecture note
+```
+assets/
+├── audio/completion-chime.mp3       4 KB  — CC0 (self-generated)
+│       completion-chime.wav        70 KB — CC0 backup
+├── video/timer-ring-animation.svg   2 KB  — CC BY 4.0 SMIL animation
+├── images/                          App screenshots + icons
+├── css/style.css                   ~1900 lines
+└── js/
+    ├── translations.js              509 EN + 509 DE strings
+    ├── i18n.js                      i18n engine + language switcher
+    ├── components.js                Nav, footer, skip link
+    └── main.js                      Cookie banner mock + form mock
+```
 
-Nav and footer live **once** in `assets/js/components.js` and are injected into every page at runtime. Each page only contains a `<div id="nav-placeholder"></div>` and `<div id="footer-placeholder"></div>`. The correct relative base path is auto-detected from the stylesheet `<link>` tag — no per-page config needed.
+## How the i18n works
 
----
+Every visible text is marked with `data-i18n="namespace.key"`.
+The engine in `i18n.js` looks up the key in `translations.js` for the
+currently active language and replaces the element's textContent.
 
-## Local development
+Examples:
+```html
+<h1 data-i18n="hero.titleA">Focus, simplified.</h1>
+<input data-i18n-attr="placeholder:contact.form.namePh">
+<title data-i18n="index.title">Timerdoro</title>
+```
 
-No build step, no dependencies. Just open `index.html` in a browser:
+Default text in the HTML is the English fallback shown until JS runs.
+
+Language is stored in `localStorage` under `timerdoro_lang` and
+preserved across pages. Browser language is detected on first visit.
+
+## How the Cookie banner works (DSGVO mock)
+
+The banner shows 4 categories per § 165 TKG 2021 / GDPR Art. 6:
+- **Strictly necessary** — always on (language + consent flag)
+- **Functional** — would store UI prefs (currently inert)
+- **Analytics (mock)** — labelled "Currently not active"
+- **Marketing (mock)** — labelled "Currently not active"
+
+The UI is fully implemented (Accept / Reject / Save / Manage). Consent is stored
+in `localStorage.timerdoro_cookie_consent_v2`. Nothing is ever actually transmitted —
+the inactive categories are documented as such in the cookie policy.
+
+## Local testing
+
+For full fidelity (the cookie banner needs JS, language toggle needs translations.js):
 
 ```bash
-# Option A — direct file open
-open index.html
-
-# Option B — local server (avoids any file:// quirks)
-python3 -m http.server 8080
-# → http://localhost:8080
+cd /path/to/timerdoro
+python3 -m http.server 8000
+# → http://localhost:8000
 ```
-
----
 
 ## Deployment
 
-The site is plain HTML/CSS/JS — deploy anywhere that serves static files.
+Standard FTP to World4You:
+- Host: `ftp.world4you.com`
+- Port: `21`
+- Target folder: `html/`
 
-**GitHub Pages**
-1. Push to `main`
-2. Settings → Pages → Source: `main / (root)`
-3. Available at `https://USERNAME.github.io/timerdoro/`
+Upload the contents of this directory.
 
----
+## Author
 
-## Tech
+Raphael Wudernitz · timerdoro@wudernitz.at · github.com/gloriousfoxy
 
-- Plain HTML5, CSS3, vanilla JS — zero dependencies, zero build tools
-- Dark-mode-first design with CSS custom properties
-- Responsive & mobile-friendly
+## License
 
----
-
-## Developer
-
-**Raphael Wudernitz** — Informatics student at TU Wien, indie iOS developer  
-[raphael@wudernitz.at](mailto:raphael@wudernitz.at) · [github.com/gloriousfoxy](https://github.com/gloriousfoxy)
+All code and content © Raphael Wudernitz 2026 unless attributed otherwise on `/legal/credits`.

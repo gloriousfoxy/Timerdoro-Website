@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="index.title">Timerdoro — Beautiful Pomodoro for Apple devices</title>
+  <meta name="description" content="A focused Pomodoro timer for iPhone, iPad, and Mac. No subscription, no tracking, no ads. Just focus." data-i18n-attr="content:index.metaDesc">
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main id="main" tabindex="-1">
+
+  <!-- ╭─ HERO ─────────────────────────────────────────╮ -->
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-badge" data-i18n="hero.badge">Beta now in TestFlight</span>
+      <h1 class="hero-title">
+        <span data-i18n="hero.titleA">Focus, simplified.</span><br>
+        <span class="hero-title-accent" data-i18n="hero.titleB">Beautifully.</span>
+      </h1>
+      <p class="hero-subtitle" data-i18n="hero.subtitle">A Pomodoro timer for iPhone, iPad, and Mac that respects your time and your privacy. No subscription. No tracking. Just focus.</p>
+      <div class="hero-actions">
+        <a href="#cta" class="btn btn-primary" data-i18n="hero.btnPrimary">Join the Beta →</a>
+        <a href="#features" class="btn btn-secondary" data-i18n="hero.btnSecondary">See what's inside</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label" data-i18n="hero.stat1Label">Platforms</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" data-i18n="hero.stat2Value">€3.99</span>
+          <span class="stat-label" data-i18n="hero.stat2Label">Lifetime, no sub</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">0</span>
+          <span class="stat-label" data-i18n="hero.stat3Label">Trackers</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value">100%</span>
+          <span class="stat-label" data-i18n="hero.stat4Label">Native SwiftUI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mac hero shot -->
+    <div class="hero-mac-wrap">
+      <img src="/assets/images/macos_focus.png"
+           alt=""
+           data-i18n-attr="alt:hero.macImgAlt"
+           class="hero-mac-img"
+           loading="eager"
+           decoding="async">
+      <div class="hero-mac-caption">
+        <h2 class="hero-mac-caption-title" data-i18n="hero.captionTitle">Built for the desktop</h2>
+        <p data-i18n="hero.captionSub">Modes, timer, task field, and live statistics in one calm layout — no clutter, no web wrapper.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╭─ WHY ──────────────────────────────────────────╮ -->
+  <section id="features" class="section">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="why.eyebrow">Why Timerdoro</span>
+      <h2 class="section-title" data-i18n="why.title">Designed for actual focus.</h2>
+      <p class="section-subtitle" data-i18n="why.subtitle">Most Pomodoro apps are either too complex (full task systems) or too basic (just a countdown). Timerdoro is the focused middle.</p>
+      <p class="section-subtitle" data-i18n="why.subtitle2">The short version: what matters most, without the productivity theatre.</p>
+    </div>
+
+    <div class="feature-grid">
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card1.title">Pure &amp; focused</h3>
+        <p class="feature-sub" data-i18n="why.card1.sub">Intervals without noise.</p>
+        <p class="feature-body" data-i18n="why.card1.body">One job: help you focus. No bloat, no nags, no streaks-or-die. Just clean intervals and gentle feedback.</p>
+      </article>
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card2.title">Beautifully native</h3>
+        <p class="feature-sub" data-i18n="why.card2.sub">SwiftUI on every screen size.</p>
+        <p class="feature-body" data-i18n="why.card2.body">Built with SwiftUI from day one. Adaptive layouts on iPhone, iPad, and Mac. Feels right at home everywhere.</p>
+      </article>
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card3.title">Privacy first</h3>
+        <p class="feature-sub" data-i18n="why.card3.sub">Nothing leaves your device.</p>
+        <p class="feature-body" data-i18n="why.card3.body">Zero data collection. No analytics. No third parties. Everything stays on your device, period.</p>
+      </article>
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card4.title">Pay once, own it</h3>
+        <p class="feature-sub" data-i18n="why.card4.sub">Pro for €3.99, forever.</p>
+        <p class="feature-body" data-i18n="why.card4.body">One-time purchase. No subscription games. Buy Pro for €3.99 and keep it forever, across all your devices.</p>
+      </article>
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card5.title">Smart end-early</h3>
+        <p class="feature-sub" data-i18n="why.card5.sub">Finish early after 80% — still counts.</p>
+        <p class="feature-body" data-i18n="why.card5.body">Done with your task before the timer finishes? After 80% of the focus time, end early and still get credit.</p>
+      </article>
+      <article class="feature-card">
+        <h3 class="feature-title" data-i18n="why.card6.title">Stats that matter</h3>
+        <p class="feature-sub" data-i18n="why.card6.sub">Goals, streaks, export anytime.</p>
+        <p class="feature-body" data-i18n="why.card6.body">Heatmap, streaks, daily goals. Track progress without spreadsheet anxiety. Your data is yours to export anytime.</p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ╭─ SHOWCASE — quietly grouped by platform ─────╮ -->
+  <section class="section section-bg">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="showcase.eyebrow">Everywhere you focus</span>
+      <h2 class="section-title" data-i18n="showcase.title">iPhone. iPad. Apple Watch.</h2>
+      <p class="section-subtitle" data-i18n="showcase.subtitle">Native on each platform. Layouts that respect your screen. Real pixels from the app — same typography, spacing, and themes you get in TestFlight.</p>
+    </div>
+
+    <!-- iPhone trio -->
+    <div class="showcase-section">
+      <div class="showcase-section-head">
+        <span class="platform-badge">iPhone</span>
+        <h3 data-i18n="showcase.iphone.heading">On iPhone</h3>
+        <p data-i18n="showcase.iphone.sub">Thumb-friendly controls, glanceable session ring, and themes that adapt across modes.</p>
+      </div>
+      <div class="showcase-row showcase-row--phones">
+        <figure class="showcase-frame showcase-frame--phone">
+          <img src="/assets/images/focus.png" alt="" data-i18n-attr="alt:showcase.iphoneFocus.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.iphoneFocus.caption">Focus mode</figcaption>
+        </figure>
+        <figure class="showcase-frame showcase-frame--phone">
+          <img src="/assets/images/shortbreak_diff_color.png" alt="" data-i18n-attr="alt:showcase.iphoneTheme.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.iphoneTheme.caption">Themes (Pro)</figcaption>
+        </figure>
+        <figure class="showcase-frame showcase-frame--phone">
+          <img src="/assets/images/settings.png" alt="" data-i18n-attr="alt:showcase.iphoneSettings.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.iphoneSettings.caption">Settings</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <hr class="platform-divider" aria-hidden="true">
+
+    <!-- iPad pair -->
+    <div class="showcase-section">
+      <div class="showcase-section-head">
+        <span class="platform-badge">iPad</span>
+        <h3 data-i18n="showcase.ipad.heading">On iPad</h3>
+        <p data-i18n="showcase.ipad.sub">More room means more clarity: stats below the timer, side-by-side controls in landscape.</p>
+      </div>
+      <div class="showcase-row showcase-row--pads">
+        <figure class="showcase-frame showcase-frame--pad">
+          <img src="/assets/images/longbreak.png" alt="" data-i18n-attr="alt:showcase.ipadLong.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.ipadLong.caption">Long break</figcaption>
+        </figure>
+        <figure class="showcase-frame showcase-frame--pad">
+          <img src="/assets/images/statistics.png" alt="" data-i18n-attr="alt:showcase.ipadStats.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.ipadStats.caption">Statistics</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <hr class="platform-divider" aria-hidden="true">
+
+    <!-- iPad landscape (single, wide) -->
+    <div class="showcase-section">
+      <div class="showcase-section-head">
+        <span class="platform-badge">iPad · Landscape</span>
+        <p data-i18n="showcase.ipadWide.sub">Split view on iPad: timer and controls side by side when you have the width.</p>
+      </div>
+      <div class="showcase-row showcase-row--single">
+        <figure class="showcase-frame showcase-frame--pad-wide">
+          <img src="/assets/images/shortbreak.png" alt="" data-i18n-attr="alt:showcase.ipadWide.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.ipadWide.caption">Landscape</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <hr class="platform-divider" aria-hidden="true">
+
+    <!-- Apple Watch (coming v1.1) -->
+    <div class="showcase-section">
+      <div class="showcase-section-head">
+        <span class="platform-badge" data-i18n="showcase.watch.badge">Coming in v1.1</span>
+        <h3 data-i18n="showcase.watch.heading">On Apple Watch</h3>
+        <p data-i18n="showcase.watch.sub">Quick starts from the wrist — mode, time, and play, glanceable in a moment.</p>
+      </div>
+      <div class="showcase-row showcase-row--watch">
+        <figure class="showcase-frame showcase-frame--watch">
+          <img src="/assets/images/watchos_focus.png" alt="" data-i18n-attr="alt:showcase.watch.alt" loading="lazy" decoding="async">
+          <figcaption data-i18n="showcase.watch.caption">Apple Watch</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ╭─ PRICING ──────────────────────────────────────╮ -->
+  <section id="pricing" class="section">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="pricing.eyebrow">Pricing</span>
+      <h2 class="section-title" data-i18n="pricing.title">Honest, simple, fair.</h2>
+      <p class="section-subtitle" data-i18n="pricing.subtitle">No subscriptions. No tiers. Just two options.</p>
+      <p class="section-subtitle" data-i18n="pricing.subtitle2">Free is genuinely useful; Pro adds depth when you want themes, goals, and exports.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <article class="price-card">
+        <header class="price-card-head">
+          <h3 class="price-label" data-i18n="pricing.free.label">Free</h3>
+          <div class="price-amount"><span class="amount">€0</span></div>
+          <p class="price-period" data-i18n="pricing.free.period">Forever</p>
+          <p class="price-sub" data-i18n="pricing.free.sub">Full timer, modes, and core stats — no trial limits.</p>
+        </header>
+        <ul class="price-features">
+          <li data-i18n="pricing.free.feat1">Full Pomodoro timer</li>
+          <li data-i18n="pricing.free.feat2">3 modes (Focus, Short, Long)</li>
+          <li data-i18n="pricing.free.feat3">Custom intervals up to 90 min</li>
+          <li data-i18n="pricing.free.feat4">Notifications &amp; sound</li>
+          <li data-i18n="pricing.free.feat5">Today &amp; week stats</li>
+          <li data-i18n="pricing.free.feat6">iPhone, iPad, Mac native</li>
+        </ul>
+      </article>
+
+      <article class="price-card price-card--pro">
+        <div class="price-badge" data-i18n="pricing.pro.badge">★ POPULAR</div>
+        <header class="price-card-head">
+          <h3 class="price-label" data-i18n="pricing.pro.label">Pro</h3>
+          <div class="price-amount"><span class="amount">€3.99</span></div>
+          <p class="price-period" data-i18n="pricing.pro.period">One-time, lifetime</p>
+          <p class="price-sub" data-i18n="pricing.pro.sub">Themes, sounds, goals, tags, heatmap, history, and export.</p>
+        </header>
+        <ul class="price-features">
+          <li data-i18n="pricing.pro.feat1">Everything in Free</li>
+          <li data-i18n="pricing.pro.feat2">6 beautiful themes</li>
+          <li data-i18n="pricing.pro.feat3">7 completion sounds</li>
+          <li data-i18n="pricing.pro.feat4">Custom intervals up to 180 min</li>
+          <li data-i18n="pricing.pro.feat5">Daily goal tracking</li>
+          <li data-i18n="pricing.pro.feat6">Tags, heatmap, streaks</li>
+          <li data-i18n="pricing.pro.feat7">Detailed history &amp; CSV export</li>
+          <li data-i18n="pricing.pro.feat8">Custom app icons</li>
+        </ul>
+      </article>
+    </div>
+
+    <p class="price-footnote" data-i18n="pricing.footnote">Family Sharing supported · No recurring charges · No hidden fees</p>
+  </section>
+
+
+  <!-- ╭─ CTA ──────────────────────────────────────────╮ -->
+  <section id="cta" class="section section-cta">
+    <div class="section-head">
+      <span class="eyebrow" data-i18n="cta.eyebrow">Next step</span>
+      <h2 class="section-title" data-i18n="cta.title">Ready to focus?</h2>
+      <p class="section-subtitle" data-i18n="cta.subtitle">Join the beta for TestFlight access. We'll email you when the App Store version ships — no list selling, ever.</p>
+    </div>
+    <div class="cta-actions">
+      <a href="/contact/index.html" class="btn btn-primary" data-i18n="cta.btnPrimary">Get the TestFlight link →</a>
+      <a href="/about/index.html" class="btn btn-secondary" data-i18n="cta.btnSecondary">Learn the story</a>
+    </div>
+  </section>
+
+</main>
+
+<div id="footer-placeholder"></div>
+
+<!-- Scripts ─ order matters: translations first, then engine, then shared components, then page logic -->
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

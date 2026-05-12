@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://raphael.wudernitz.at/raphael/timerdoro/sitemap.xml
+Sitemap: https://timerdoro.wudernitz.at/sitemap.xml

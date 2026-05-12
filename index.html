@@ -9,7 +9,7 @@
 <meta property="og:title" content="Timerdoro — Beautiful Pomodoro for Apple devices">
 <meta property="og:description" content="A focused Pomodoro timer for iPhone, iPad, and Mac. No subscription, no tracking, no ads.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://raphael.wudernitz.at/raphael/timerdoro">
+<meta property="og:url" content="https://timerdoro.wudernitz.at">
 <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -44,16 +44,27 @@
       </a>
     </div>
 
-    <!-- Hero screenshot placeholder -->
     <div class="hero-screenshot">
-      <div class="screenshot-placeholder">
-        <div class="placeholder-icon">🍅</div>
-        <span class="placeholder-label">App screenshot goes here</span>
-        <span class="placeholder-text">Replace: /assets/images/hero-screenshot.png</span>
-      </div>
+      <figure class="showcase-device showcase-device--hero">
+        <div class="showcase-frame showcase-frame--desktop showcase-frame--hero-wide">
+          <img
+            class="showcase-img"
+            src="assets/images/macos_focus.png"
+            alt="Timerdoro on Mac — timer, modes, task field, and statistics"
+            width="2194"
+            height="1482"
+            loading="eager"
+            decoding="async"
+          >
+        </div>
+        <figcaption class="hero-screenshot-caption">
+          <span class="hero-screenshot-caption-title">Built for the desktop</span>
+          <span class="hero-screenshot-caption-sub">Modes, timer, task field, and live statistics in one calm layout—no clutter, no web wrapper.</span>
+        </figcaption>
+      </figure>
     </div>
 
-    <!-- Stats -->
+    <p class="hero-stats-intro">What you get from day one</p>
     <div class="stats-strip">
       <div class="stat">
         <div class="stat-value">3</div>
@@ -77,12 +88,15 @@
 
   <!-- ═══ WHY TIMERDORO ═══ -->
   <section class="section" id="why">
-    <div class="text-center">
+    <div class="section-intro text-center">
       <span class="eyebrow">Why Timerdoro</span>
       <h2 class="section-title">Designed for actual focus.</h2>
       <p class="section-subtitle">
         Most Pomodoro apps are either too complex (full task systems)
         or too basic (just a countdown). Timerdoro is the focused middle.
+      </p>
+      <p class="section-subtitle-secondary">
+        The short version: what matters most, without the productivity theatre.
       </p>
     </div>
 
@@ -90,36 +104,42 @@
       <div class="feature-card">
         <div class="feature-icon icon-tomato">🍅</div>
         <h3>Pure &amp; focused</h3>
+        <p class="feature-card-subtitle">Intervals without noise.</p>
         <p>One job: help you focus. No bloat, no nags, no streaks-or-die. Just clean intervals and gentle feedback.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-purple">🎨</div>
         <h3>Beautifully native</h3>
+        <p class="feature-card-subtitle">SwiftUI on every screen size.</p>
         <p>Built with SwiftUI from day one. Adaptive layouts on iPhone, iPad, and Mac. Feels right at home everywhere.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-green">🔒</div>
         <h3>Privacy first</h3>
+        <p class="feature-card-subtitle">Nothing leaves your device.</p>
         <p>Zero data collection. No analytics. No third parties. Everything stays on your device, period.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-gold">💎</div>
         <h3>Pay once, own it</h3>
+        <p class="feature-card-subtitle">Pro for €3.99, forever.</p>
         <p>One-time purchase. No subscription games. Buy Pro for €3.99 and keep it forever, across all your devices.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-blue">⏱️</div>
         <h3>Smart end-early</h3>
+        <p class="feature-card-subtitle">Finish early after 80%—still counts.</p>
         <p>Done with your task before the timer finishes? After 80% of the focus time, end early and still get credit.</p>
       </div>
 
       <div class="feature-card">
         <div class="feature-icon icon-cyan">📊</div>
         <h3>Stats that matter</h3>
+        <p class="feature-card-subtitle">Goals, streaks, export anytime.</p>
         <p>Heatmap, streaks, daily goals. Track progress without spreadsheet anxiety. Your data is yours to export anytime.</p>
       </div>
     </div>
@@ -128,33 +148,163 @@
 
   <!-- ═══ FEATURE SHOWCASE WITH PLATFORMS ═══ -->
   <section class="section" id="features">
-    <div class="text-center">
+    <div class="section-intro text-center">
       <span class="eyebrow">Everywhere you focus</span>
       <h2 class="section-title">iPhone. iPad. Mac.</h2>
       <p class="section-subtitle">
         Native on each platform. Layouts that respect your screen.
         Apple Watch &amp; Menu Bar coming in v1.1.
       </p>
+      <p class="section-subtitle-secondary">
+        Real pixels from the app—same typography, spacing, and themes you get in TestFlight.
+      </p>
     </div>
 
-    <!-- iPhone showcase -->
-    <div class="screenshot-placeholder" style="margin-bottom: 18px;">
-      <div class="placeholder-icon">📱</div>
-      <span class="placeholder-label">iPhone screenshot</span>
-      <span class="placeholder-text">Replace: /assets/images/iphone-showcase.png</span>
-    </div>
+    <div class="showcase-gallery showcase-gallery--platform-rows" aria-label="Timerdoro across devices">
 
-    <!-- iPad + Mac side by side -->
-    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 18px;">
-      <div class="screenshot-placeholder" style="padding: 50px 30px;">
-        <div class="placeholder-icon" style="background: rgba(168,99,218,0.2); color: #c894e8; box-shadow: 0 16px 48px rgba(168,99,218,0.25);">📲</div>
-        <span class="placeholder-label">iPad screenshot</span>
-        <span class="placeholder-text">/assets/images/ipad-showcase.png</span>
+      <div class="showcase-section">
+        <div class="showcase-row showcase-row--phones">
+          <figure>
+            <div class="showcase-frame showcase-frame--phone">
+              <img
+                class="showcase-img"
+                src="assets/images/focus.png"
+                alt="Timerdoro on iPhone — Focus mode with session ring and controls"
+                width="912"
+                height="1832"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">iPhone</span>
+              <span class="showcase-caption-sub">Focus mode with a clear ring, session counter, and controls that stay thumb-friendly.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="showcase-frame showcase-frame--phone">
+              <img
+                class="showcase-img"
+                src="assets/images/shortbreak_diff_color.png"
+                alt="Timerdoro on iPhone — themed short break with task title"
+                width="912"
+                height="1829"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">Themes</span>
+              <span class="showcase-caption-sub">Color systems that track Focus, breaks, and accents—pick one that fits your day.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="showcase-frame showcase-frame--phone showcase-frame--tall">
+              <img
+                class="showcase-img"
+                src="assets/images/settings.png"
+                alt="Timerdoro settings on iPhone — durations, daily goal, and themes"
+                width="912"
+                height="1831"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">Settings</span>
+              <span class="showcase-caption-sub">Durations, daily goals, and themes—everything in one scrollable sheet.</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="screenshot-placeholder" style="padding: 50px 30px;">
-        <div class="placeholder-icon" style="background: rgba(96,215,226,0.2); color: #66d9e8; box-shadow: 0 16px 48px rgba(96,215,226,0.25);">💻</div>
-        <span class="placeholder-label">Mac screenshot</span>
-        <span class="placeholder-text">/assets/images/mac-showcase.png</span>
+
+      <hr class="platform-divider" aria-hidden="true">
+
+      <div class="showcase-section">
+        <div class="showcase-row showcase-row--pads">
+          <figure>
+            <div class="showcase-frame showcase-frame--pad">
+              <img
+                class="showcase-img"
+                src="assets/images/longbreak.png"
+                alt="Timerdoro on iPad — long break mode with statistics"
+                width="1460"
+                height="1890"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">iPad</span>
+              <span class="showcase-caption-sub">Long-form layouts: timer up top, stats below, tuned for portrait glass.</span>
+            </figcaption>
+          </figure>
+          <figure>
+            <div class="showcase-frame showcase-frame--pad showcase-frame--modal">
+              <img
+                class="showcase-img"
+                src="assets/images/statistics.png"
+                alt="Timerdoro statistics sheet — week overview, streaks, and history"
+                width="1460"
+                height="1891"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">Statistics</span>
+              <span class="showcase-caption-sub">Week overview, streaks, and history—readable charts without dashboard noise.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <hr class="platform-divider" aria-hidden="true">
+
+      <div class="showcase-section">
+        <div class="showcase-row showcase-row--single">
+          <figure>
+            <div class="showcase-frame showcase-frame--pad-wide showcase-frame--landscape">
+              <img
+                class="showcase-img"
+                src="assets/images/shortbreak.png"
+                alt="Timerdoro on iPad — split layout with timer and controls"
+                width="1896"
+                height="1457"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">Adaptive layout</span>
+              <span class="showcase-caption-sub">Split view on iPad: timer and controls side by side when you have the width.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <hr class="platform-divider" aria-hidden="true">
+
+      <div class="showcase-section">
+        <div class="showcase-row showcase-row--watch">
+          <figure>
+            <div class="showcase-frame showcase-frame--watch">
+              <img
+                class="showcase-img"
+                src="assets/images/watchos_focus.png"
+                alt="Timerdoro on Apple Watch — Mode screen with focus timer"
+                width="552"
+                height="602"
+                loading="lazy"
+                decoding="async"
+              >
+            </div>
+            <figcaption class="showcase-caption">
+              <span class="showcase-caption-title">Apple Watch</span>
+              <span class="showcase-caption-sub">Glanceable time, mode, and play—built for quick starts from the wrist.</span>
+            </figcaption>
+          </figure>
+        </div>
       </div>
     </div>
   </section>
@@ -162,11 +312,14 @@
 
   <!-- ═══ PRICING ═══ -->
   <section class="section" id="pricing">
-    <div class="text-center">
+    <div class="section-intro text-center">
       <span class="eyebrow">Pricing</span>
       <h2 class="section-title">Honest, simple, fair.</h2>
       <p class="section-subtitle">
         No subscriptions. No tiers. Just two options.
+      </p>
+      <p class="section-subtitle-secondary">
+        Free is genuinely useful; Pro adds depth when you want themes, goals, and exports.
       </p>
     </div>
 
@@ -174,6 +327,7 @@
 
       <div class="price-card">
         <div class="price-title">Free</div>
+        <p class="price-subtitle">Full timer, modes, and core stats—no trial limits.</p>
         <div class="price-amount">
           <span class="price-currency">€</span>
           <span class="price-value">0</span>
@@ -192,6 +346,7 @@
       <div class="price-card pro">
         <div class="badge">★ POPULAR</div>
         <div class="price-title">Pro</div>
+        <p class="price-subtitle">Themes, sounds, goals, tags, heatmap, history, and export.</p>
         <div class="price-amount">
           <span class="price-currency">€</span>
           <span class="price-value">3.99</span>
@@ -211,18 +366,21 @@
 
     </div>
 
-    <p class="text-center" style="color: var(--text-3); font-size: 13px; margin-top: 32px;">
+    <p class="section-footnote text-center">
       Family Sharing supported · No recurring charges · No hidden fees
     </p>
   </section>
 
 
   <!-- ═══ FINAL CTA ═══ -->
-  <section class="section text-center">
-    <h2 class="section-title">Ready to focus?</h2>
-    <p class="section-subtitle" style="margin-left: auto; margin-right: auto;">
-      Join the beta now. App Store launch coming soon.
-    </p>
+  <section class="section text-center section-cta">
+    <div class="section-intro text-center">
+      <span class="eyebrow">Next step</span>
+      <h2 class="section-title">Ready to focus?</h2>
+      <p class="section-subtitle">
+        Join the beta for TestFlight access. We’ll email you when the App Store version ships—no list selling, ever.
+      </p>
+    </div>
     <div class="btn-row">
       <a href="#" class="btn btn-primary">Get the TestFlight link →</a>
       <a href="about/index.html" class="btn btn-secondary">Learn the story</a>
