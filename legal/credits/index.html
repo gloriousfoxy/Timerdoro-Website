@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="cred.title">Credits &amp; Licenses — Timerdoro</title>
+  <link rel="icon" type="image/png" href="/assets/images/app-icon.png">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+
+<main id="main" tabindex="-1">
+  <article class="article">
+    <header class="article-header">
+      <h1 data-i18n="cred.h1">Credits &amp; Licenses</h1>
+      <p class="article-subtitle" data-i18n="cred.subtitle"></p>
+      <p class="article-meta" data-i18n="cred.lastUpdated"></p>
+    </header>
+
+    <h2 data-i18n="cred.intro.h">Why this page exists</h2>
+    <p data-i18n="cred.intro.p"></p>
+
+    <h2 data-i18n="cred.own.h">1. Own works (© Raphael Wudernitz)</h2>
+    <p data-i18n="cred.own.p"></p>
+    <ul>
+      <li data-i18n="cred.own.li1"></li>
+      <li data-i18n="cred.own.li2"></li>
+      <li data-i18n="cred.own.li3"></li>
+      <li data-i18n="cred.own.li4"></li>
+      <li data-i18n="cred.own.li5"></li>
+      <li data-i18n="cred.own.li6"></li>
+      <li data-i18n="cred.own.li7"></li>
+    </ul>
+
+    <h2 data-i18n="cred.fonts.h">2. Typography</h2>
+    <p data-i18n="cred.fonts.p"></p>
+
+    <!-- ── Audio sample (real, playable) ── -->
+    <h2 data-i18n="cred.audio.h">3. Audio — Completion chime</h2>
+    <div class="media-demo">
+      <p data-i18n="cred.audio.p"></p>
+      <p><strong data-i18n="cred.audio.try">Try it:</strong></p>
+      <audio controls preload="metadata" aria-label="Timerdoro completion chime — short two-tone beep">
+        <source src="/assets/audio/completion-chime.mp3" type="audio/mpeg">
+        <source src="/assets/audio/completion-chime.wav" type="audio/wav">
+        Your browser does not support the audio element.
+      </audio>
+      <p class="lic" data-i18n="cred.audio.lic"></p>
+    </div>
+
+    <!-- ── Animation (inline SVG, playable) ── -->
+    <h2 data-i18n="cred.animation.h">4. Animation — Timer ring</h2>
+    <div class="media-demo">
+      <p data-i18n="cred.animation.p"></p>
+      <p><strong data-i18n="cred.animation.see">See it:</strong></p>
+      <div class="anim-frame">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="Animated timer ring filling from 0 to 100 percent">
+          <title>Timerdoro Timer Ring Animation</title>
+          <desc>Demonstration of the Pomodoro timer's progress ring filling over five seconds, on loop.</desc>
+          <circle cx="100" cy="100" r="78" fill="none" stroke="#2a1f1d" stroke-width="14"/>
+          <circle cx="100" cy="100" r="78" fill="none" stroke="#ee5c52" stroke-width="14"
+                  stroke-linecap="round"
+                  stroke-dasharray="490"
+                  stroke-dashoffset="490"
+                  transform="rotate(-90 100 100)">
+            <animate attributeName="stroke-dashoffset"
+                     values="490;0;0;490;490"
+                     keyTimes="0;0.7;0.85;0.95;1"
+                     dur="5s"
+                     repeatCount="indefinite"/>
+          </circle>
+          <circle cx="100" cy="100" r="6" fill="#ee5c52">
+            <animate attributeName="r" values="6;9;6" dur="1.25s" repeatCount="indefinite"/>
+            <animate attributeName="opacity" values="0.9;0.5;0.9" dur="1.25s" repeatCount="indefinite"/>
+          </circle>
+          <text x="100" y="155" font-family="-apple-system, system-ui, sans-serif"
+                font-size="13" font-weight="600" fill="#a0908d"
+                text-anchor="middle" letter-spacing="1.5">FOCUS</text>
+        </svg>
+      </div>
+      <p class="lic" data-i18n="cred.animation.lic"></p>
+    </div>
+
+    <h2 data-i18n="cred.third.h">5. Third-party content</h2>
+    <p data-i18n="cred.third.intro"></p>
+    <ul>
+      <li data-i18n="cred.third.li1"></li>
+      <li data-i18n="cred.third.li2"></li>
+      <li data-i18n="cred.third.li3"></li>
+    </ul>
+
+    <h2 data-i18n="cred.changes.h">6. Changes</h2>
+    <p data-i18n="cred.changes.p"></p>
+  </article>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script src="/assets/js/translations.js"></script>
+<script src="/assets/js/i18n.js"></script>
+<script src="/assets/js/components.js"></script>
+<script src="/assets/js/main.js"></script>
+</body>
+</html>

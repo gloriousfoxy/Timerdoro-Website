@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/</loc>
+    <loc>https://timerdoro.wudernitz.at/</loc>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/about/</loc>
+    <loc>https://timerdoro.wudernitz.at/about/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/contact/</loc>
+    <loc>https://timerdoro.wudernitz.at/contact/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/faq/</loc>
+    <loc>https://timerdoro.wudernitz.at/faq/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/press/</loc>
+    <loc>https://timerdoro.wudernitz.at/press/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/legal/privacy/</loc>
+    <loc>https://timerdoro.wudernitz.at/legal/privacy/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/legal/impressum/</loc>
+    <loc>https://timerdoro.wudernitz.at/legal/impressum/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://raphael.wudernitz.at/raphael/timerdoro/legal/cookies/</loc>
+    <loc>https://timerdoro.wudernitz.at/legal/cookies/</loc>
     <changefreq>yearly</changefreq>
     <priority>0.5</priority>
   </url>
