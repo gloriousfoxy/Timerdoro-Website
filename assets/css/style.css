@@ -249,7 +249,7 @@ h1, h2, h3, h4 { letter-spacing: -0.4px; }
 
 .btn-primary {
   background: var(--tomato);
-  color: white;
+  color: white !important;
   box-shadow: 0 6px 24px var(--tomato-glow);
 }
 
@@ -1137,6 +1137,48 @@ h1, h2, h3, h4 { letter-spacing: -0.4px; }
 
 /* ── FAQ Page ──────────────────────────────── */
 
+.faq-link-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding: 18px 20px;
+
+  border: 1px solid var(--border);
+  border-radius: 20px;
+
+  background: var(--tomato);
+  color: white !important;
+
+  text-decoration: none;
+  font-weight: 600;
+
+  transition:
+          transform 0.2s ease,
+          border-color 0.2s ease,
+          background 0.2s ease,
+          box-shadow 0.2s ease;
+}
+
+.faq-link-card:hover {
+  border-color: var(--border-strong);
+  /*background: var(--card);*/
+
+  /*transform: translateY(-2px);*/
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.faq-link-card .arrow {
+  opacity: 0.7;
+  transition: transform 0.2s ease;
+}
+
+.faq-link-card:hover .arrow {
+  transform: translateX(4px);
+}
+
 .faq-list {
   margin-top: 30px;
 }
@@ -1148,6 +1190,7 @@ h1, h2, h3, h4 { letter-spacing: -0.4px; }
   margin-bottom: 12px;
   overflow: hidden;
   transition: border 0.2s;
+  padding: 0 12px;
 }
 
 .faq-item[open] {
@@ -2456,3 +2499,189 @@ button:focus-visible,
   font-style: italic;
   margin-top: 12px;
 }
+
+/* ════════════════════════════════════════════════════════════
+   ABOUT PAGE — Company facts grid (Aufgabe 0)
+   ════════════════════════════════════════════════════════════ */
+
+.facts-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 14px;
+  margin: 24px 0 36px;
+}
+
+.fact-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.fact-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  color: var(--tomato);
+}
+
+.fact-value {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+/* ════════════════════════════════════════════════════════════
+   ABOUT PAGE — Brand card numbering & Nice class pills
+   ════════════════════════════════════════════════════════════ */
+
+.brand-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.brand-card-head h3 {
+  margin: 0 !important;
+}
+
+.brand-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: var(--tomato);
+  color: white;
+  font-weight: 800;
+  font-size: 15px;
+  flex-shrink: 0;
+}
+
+.brand-classes {
+  margin-top: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+
+.brand-classes-label {
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  color: var(--text-3);
+}
+
+.brand-class-pill {
+  display: inline-block;
+  background: var(--tomato-soft, rgba(238, 92, 82, 0.12));
+  color: var(--tomato);
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px 11px;
+  border-radius: 100px;
+  border: 1px solid rgba(238, 92, 82, 0.25);
+}
+
+/* ════════════════════════════════════════════════════════════
+   ABOUT PAGE — Trademark research cards
+   ════════════════════════════════════════════════════════════ */
+
+.research-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 14px;
+  margin: 24px 0;
+}
+
+.research-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 18px 20px;
+  position: relative;
+}
+
+.research-card h4 {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 8px 0 8px;
+  color: var(--text);
+}
+
+.research-card p {
+  font-size: 14px;
+  color: var(--text-2);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.research-card code {
+  background: var(--bg-elev, rgba(255,255,255,0.06));
+  padding: 1px 6px;
+  border-radius: 4px;
+  font-size: 12.5px;
+  font-family: ui-monospace, 'SF Mono', monospace;
+}
+
+.research-status {
+  display: inline-block;
+  font-size: 10.5px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  padding: 3px 9px;
+  border-radius: 100px;
+  text-transform: uppercase;
+}
+
+.research-card--ok .research-status {
+  background: rgba(52, 199, 89, 0.15);
+  color: #34c759;
+  border: 1px solid rgba(52, 199, 89, 0.35);
+}
+
+.research-card--warn .research-status {
+  background: rgba(255, 159, 10, 0.15);
+  color: #ff9f0a;
+  border: 1px solid rgba(255, 159, 10, 0.35);
+}
+
+.research-card--ok {
+  border-left: 3px solid #34c759;
+}
+
+.research-card--warn {
+  border-left: 3px solid #ff9f0a;
+}
+
+.research-note {
+  font-size: 13px;
+  font-style: italic;
+  color: var(--text-3);
+  margin-top: 8px !important;
+  margin-bottom: 32px !important;
+  padding: 10px 14px;
+  background: var(--bg-elev, rgba(255,255,255,0.03));
+  border-left: 2px solid var(--border-strong);
+  border-radius: 4px;
+}
+
+@media (max-width: 600px) {
+  .facts-grid, .research-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Language-aware visibility (no JS dependency) */
+html[lang="en"] .lang-de { display: none; }
+html[lang="de"] .lang-en { display: none; }

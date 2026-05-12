@@ -7,8 +7,9 @@
 
 window.TRANSLATIONS = {
 
-  /* ── Common (nav, footer, cookie banner) ── */
-
+  /* ─────────────────────────────────────────── */
+  /* ── EN ──────────────────────────────────── */
+  /* ─────────────────────────────────────────── */
   en: {
     // Meta
     'html.lang': 'en',
@@ -185,16 +186,41 @@ window.TRANSLATIONS = {
     '404.btnHome': '← Back to Home',
     '404.btnReport': 'Report broken link',
 
-    /* ── About ── */
+
+    /* ── About (EN) ── */
     'about.title': 'About — Timerdoro',
     'about.eyebrow': 'Our story',
     'about.h1': 'Built solo, in Vienna, with care.',
     'about.subtitle': 'A small story about why Timerdoro exists.',
     'about.profile.role': 'Informatics student at TU Wien · Indie iOS Developer · Building Timerdoro since 2025',
+
+    // ── Why
     'about.h2.why': 'Why I built this',
     'about.why.p1': 'I tried every Pomodoro app on the App Store. Some were beautiful but lacked features I needed. Others had everything but felt cluttered or pushed me into expensive subscriptions for basic functionality. None felt right.',
     'about.why.p2': 'So I started building my own — initially just for myself. After friends tried early versions and asked when they could have it on their phones, I decided to make it real.',
     'about.why.p3': 'Timerdoro is the app I wished existed: clean, beautiful, native to Apple\'s ecosystem, with a fair price and zero compromises on privacy.',
+
+    // ── Company facts (Aufgabe 0)
+    'about.h2.company': 'The company at a glance',
+    'about.company.intro': 'A quick snapshot of the operation behind the app — legally, structurally, and commercially.',
+    'about.company.name.l': 'Company name',
+    'about.company.name.v': 'Timerdoro (sole proprietor: Raphael Wudernitz)',
+    'about.company.legal.l': 'Legal form',
+    'about.company.legal.v': 'Sole proprietor / private operator (non-commercial, Liebhaberei)',
+    'about.company.location.l': 'Location',
+    'about.company.location.v': 'Vienna, Austria (1040)',
+    'about.company.founded.l': 'Founded',
+    'about.company.founded.v': '2025',
+    'about.company.employees.l': 'Employees',
+    'about.company.employees.v': '1 (solo indie developer)',
+    'about.company.model.l': 'Business model',
+    'about.company.model.v': 'Freemium — free app + one-time Pro upgrade (€3.99, lifetime, no subscription)',
+    'about.company.product.l': 'Product',
+    'about.company.product.v': 'Native iOS / iPadOS / macOS Pomodoro timer app (SwiftUI)',
+    'about.company.audience.l': 'Target audience',
+    'about.company.audience.v': 'Apple users seeking distraction-free, privacy-respecting focus tools — students, knowledge workers, designers, developers',
+
+    // ── Values
     'about.h2.believe': 'What I believe',
     'about.values.card1.h': '🍅 Focus over features',
     'about.values.card1.p': 'An app should do one thing exceptionally well. Pomodoro is the core, everything else serves that.',
@@ -208,20 +234,48 @@ window.TRANSLATIONS = {
     'about.values.card5.p': 'Built with SwiftUI for iPhone, iPad, and Mac. Each platform feels like home, not an afterthought.',
     'about.values.card6.h': '♻️ Ship slowly, intentionally',
     'about.values.card6.p': 'I\'d rather release one polished update than ten half-baked ones. Quality over quantity.',
-    'about.h2.brand': 'The Timerdoro brand',
-    'about.brand.intro': 'Timerdoro is more than software — it\'s a small brand identity built around three legally distinct marks. Below: what they are, what they signal, and how they\'re used.',
-    'about.brand.word.h': '1. Word mark — "Timerdoro"',
-    'about.brand.word.p': 'The name combines "Timer" (the function) with the suffix "-doro" (a nod to Pomodoro — the cooking timer that gave the technique its name). It\'s a coined word, not found in any dictionary, which makes it strong from a trademark perspective: no descriptive overlap with existing marks, distinctive at a glance.',
-    'about.brand.word.nizza': 'Intended Nice class: 9 (downloadable software for time management).',
-    'about.brand.figurative.h': '2. Figurative mark — the tomato icon',
-    'about.brand.figurative.p': 'The simplified red tomato silhouette with a stylised green stem. Used as the app icon, the favicon, and as a standalone graphic in marketing. Designed to be recognisable at 28×28 pixels in a system tray as much as at full app-icon size on a Mac dock.',
-    'about.brand.figurative.nizza': 'Intended Nice class: 9, 42 (downloadable software, software-as-a-service).',
-    'about.brand.color.h': '3. Colour mark — Tomato Red #EE5C52',
-    'about.brand.color.p': 'A specific shade of tomato red, RGB (238, 92, 82), used consistently across the app and website as the primary accent. While a colour mark alone is rarely registered (the EUIPO requires proof of acquired distinctiveness for colour-only marks per the C-49/02 Heidelberger Bauchemie criteria), our colour is always used together with the figurative mark — strengthening the brand\'s recognisability over time.',
-    'about.brand.color.nizza': 'Intended Nice class: 9 (in combination with the word and figurative marks).',
-    'about.brand.research.h': 'Trademark conflict research',
-    'about.brand.research.p': 'Before adopting the marks, we searched the EUIPO TMview and Madrid Monitor databases for similar marks in classes 9 and 42. "Timerdoro" yielded no direct hits. The closest results — "Pomodoro" related marks — refer to food products or other software with sufficiently distinct branding to avoid confusion under Art. 8(1)(b) EUTMR.',
 
+    // ── Brand (Aufgabe 3)
+    'about.h2.brand': 'The Timerdoro brand',
+    'about.brand.intro': 'Timerdoro is more than software — it\'s a small brand identity built around three legally distinct mark forms. Each is filed under specific Nice classes (Nizza-Klassen) to anchor the legal scope of protection.',
+    'about.brand.classes': 'Nice classes:',
+
+    'about.brand.word.h': 'Word mark — „Timerdoro"',
+    'about.brand.word.p': 'The name combines „Timer" (the function) with the suffix „-doro" (a nod to Pomodoro — the kitchen timer that gave the technique its name). It\'s a coined word, not found in any dictionary, which makes it strong from a trademark perspective: distinctive at a glance, no descriptive overlap with everyday vocabulary.',
+    'about.brand.word.c1': 'Class 9 — downloadable software',
+
+    'about.brand.figurative.h': 'Figurative mark — the tomato icon',
+    'about.brand.figurative.p': 'A simplified red tomato silhouette with a stylised green stem. Used as the app icon, the favicon, and as a standalone graphic in marketing. Designed to be recognisable at 28×28 px in a menu bar as much as at full app-icon size on a Mac dock.',
+    'about.brand.figurative.c1': 'Class 9 — downloadable software',
+    'about.brand.figurative.c2': 'Class 42 — software as a service',
+
+    'about.brand.color.h': 'Colour mark — Tomato Red #EE5C52',
+    'about.brand.color.p': 'A specific shade of tomato red, RGB (238, 92, 82), used consistently across the app and website as the primary accent. Colour-only marks are rarely registered alone — the EUIPO requires proof of acquired distinctiveness (C-49/02 „Heidelberger Bauchemie"). Our colour is therefore always used alongside the figurative mark, strengthening recognisability over time.',
+    'about.brand.color.c1': 'Class 9 (in combination with the word and figurative marks)',
+
+    // ── Research (Aufgabe 3 — conflict check)
+    'about.h2.research': 'Trademark conflict research',
+    'about.research.intro': 'Before adopting the marks, we searched the major trademark databases for similar marks in the relevant Nice classes. The result was nuanced — here\'s what we found and how we mitigate it.',
+
+    'about.research.s1.s': '✓ CLEAR',
+    'about.research.s1.h': 'EUIPO TMview & Madrid Monitor',
+    'about.research.s1.p': 'No registered EU or international trademarks for „Timerdoro" in classes 9 or 42. „Pomodoro"-related marks exist but refer to food products, restaurants, or unrelated software with sufficiently distinct branding.',
+
+    'about.research.s2.s': '⚠ NOTED',
+    'about.research.s2.h': 'Prior use: timerdoro.com',
+    'about.research.s2.p': 'A web-based Pomodoro timer at timerdoro.com (Gelform Inc., US) has been online since approximately 2015. No registered trademark was found on USPTO TESS or TMview, but use-based common-law rights may apply in the US. To mitigate: our offering is a separately branded native Apple-platform app, geographically focused on EU markets first, with distinct visual identity (icon, colour, typography). We monitor the situation and remain open to a coexistence agreement.',
+
+    'about.research.s3.s': '✓ CLEAR',
+    'about.research.s3.h': 'Austrian Patent Office (ÖPA)',
+    'about.research.s3.p': 'No national Austrian trademark conflict found in classes 9 or 42. Search performed via see-ip.patentamt.at.',
+
+    'about.research.s4.s': '✓ CLEAR',
+    'about.research.s4.h': 'Apple App Store name check',
+    'about.research.s4.p': 'No active iOS app named „Timerdoro" on the App Store at the time of filing. Bundle identifier at.wudernitz.timerdoro is reserved.',
+
+    'about.research.note': 'Note: this is a self-conducted preliminary check, not a formal legal opinion. We recommend an attorney-led freedom-to-operate analysis before EU trademark filing.',
+
+    // ── Roadmap & Contact & TL;DR
     'about.h2.roadmap': 'The roadmap',
     'about.roadmap.p': 'Timerdoro is at v1.0 now — the foundation. Here\'s what\'s next:',
     'about.roadmap.li1': 'v1.1 — Apple Watch app (standalone usable, syncs with iPhone)',
@@ -231,11 +285,13 @@ window.TRANSLATIONS = {
     'about.roadmap.li5': 'v1.3 — iCloud sync across all your Apple devices',
     'about.roadmap.li6': 'v2.0 — Ambient sounds & Apple Health integration',
     'about.h2.contact': 'Get in touch',
-    'about.contact.p': 'I read every email. Whether you have a feature request, found a bug, or just want to say hi — your message will reach me directly, no support bot in between. Drop a line on the contact page or email me.',
+    'about.contact.p': 'I read every email. Whether you have a feature request, found a bug, or just want to say hi — your message will reach me directly, no support bot in between.',
     'about.tldr.title': 'THANK YOU',
     'about.tldr.text': 'If you\'re using Timerdoro, you\'re directly supporting a solo indie developer\'s journey. That genuinely means a lot.',
+    'about.btn.contact': 'Contact me →',
 
-    /* ── Contact ── */
+
+    /* ── Contact (EN) ── */
     'contact.title': 'Contact — Timerdoro',
     'contact.eyebrow': 'Contact',
     'contact.h1': 'Let\'s talk.',
@@ -281,7 +337,7 @@ window.TRANSLATIONS = {
     'contact.tldr.title': 'FAIR WARNING',
     'contact.tldr.text': 'If you write something rude, I\'ll read it and reply politely once. If you write something thoughtful, you\'ll likely get a real conversation back.',
 
-    /* ── FAQ ── */
+    /* ── FAQ (EN) ── */
     'faq.title': 'FAQ — Timerdoro',
     'faq.eyebrow': 'FAQ',
     'faq.h1': 'Frequently asked questions.',
@@ -329,7 +385,7 @@ window.TRANSLATIONS = {
     'faq.bottom.title': 'QUESTION NOT HERE?',
     'faq.bottom.text': 'Email timerdoro@wudernitz.at and I\'ll add it to this list (with credit if you\'d like).',
 
-    /* ── Press ── */
+    /* ── Press (EN) ── */
     'press.title': 'Press Kit — Timerdoro',
     'press.eyebrow': 'Press Kit',
     'press.h1': 'Resources for journalists.',
@@ -369,7 +425,7 @@ window.TRANSLATIONS = {
     'press.contact.avail': 'Available for: written interviews, podcast guest spots, video calls',
     'press.note': 'Note: Press kit assets are continuously updated. If you need something specific that\'s not listed here (custom screenshot, alternate format, video footage), just reach out.',
 
-    /* ── Impressum / Imprint ── */
+    /* ── Impressum / Imprint (EN) ── */
     'imp.title': 'Imprint — Timerdoro',
     'imp.h1': 'Imprint',
     'imp.subtitle': 'Disclosure pursuant to § 5 E-Commerce Act (ECG) and § 25 Media Act (MedienG), Austria.',
@@ -392,7 +448,7 @@ window.TRANSLATIONS = {
     'imp.copyright.h': 'Copyright',
     'imp.copyright.p': 'Texts, images, logos, and other content on this site are subject to Austrian copyright (UrhG) and EU law unless marked otherwise. See the credits page for licensing of individual works.',
 
-    /* ── Privacy Policy ── */
+    /* ── Privacy Policy (EN) ── */
     'priv.title': 'Privacy Policy — Timerdoro',
     'priv.h1': 'Privacy Policy',
     'priv.subtitle': 'How we handle data on this website. Under EU General Data Protection Regulation (GDPR) and Austrian Data Protection Act (DSG).',
@@ -445,7 +501,7 @@ window.TRANSLATIONS = {
     'priv.changes.h': '6. Changes to this policy',
     'priv.changes.p': 'We may update this policy when our processing changes. The „Last updated" date at the top reflects the most recent revision. Material changes will be announced via a site banner.',
 
-    /* ── Cookies Page ── */
+    /* ── Cookies Page (EN) ── */
     'cookies.title': 'Cookie Policy — Timerdoro',
     'cookies.h1': 'Cookie Policy',
     'cookies.subtitle': 'What we store on your device, why, and how to control it.',
@@ -476,7 +532,7 @@ window.TRANSLATIONS = {
     'cookies.control.li3': 'Block all storage from this site in your browser preferences.',
     'cookies.control.note': 'If you block essential storage, the site will still work but your language choice won\'t be remembered between visits.',
 
-    /* ── License / EULA ── */
+    /* ── License / EULA (EN) ── */
     'lic.title': 'License Terms (EULA) — Timerdoro',
     'lic.h1': 'License terms (EULA)',
     'lic.subtitle': 'End User License Agreement for the Timerdoro application.',
@@ -515,7 +571,7 @@ window.TRANSLATIONS = {
     'lic.misc.h': '10. Miscellaneous',
     'lic.misc.p': 'Should any provision of this licence be or become invalid, the validity of the remaining provisions is not affected. Amendments require written form (which includes email).',
 
-    /* ── Credits / Attributions ── */
+    /* ── Credits / Attributions (EN) ── */
     'cred.title': 'Credits & Licenses — Timerdoro',
     'cred.h1': 'Credits & Licenses',
     'cred.subtitle': 'Sources, attributions, and license terms for all content on this site.',
@@ -556,7 +612,7 @@ window.TRANSLATIONS = {
     'cred.changes.h': '6. Changes',
     'cred.changes.p': 'When new assets are added to the site, they will be listed here with their licence. If you spot an attribution error or believe a work is used incorrectly, email us — we will correct or remove it promptly.',
 
-    /* ── Accessibility Statement ── */
+    /* ── Accessibility Statement (EN) ── */
     'acc.title': 'Accessibility Statement — Timerdoro',
     'acc.h1': 'Accessibility statement',
     'acc.subtitle': 'How accessible this website is, and how to report issues.',
@@ -770,57 +826,110 @@ window.TRANSLATIONS = {
     '404.btnHome': '← Zurück zum Start',
     '404.btnReport': 'Defekten Link melden',
 
-    /* ── About ── */
+    /* ── About (DE) ── */
     'about.title': 'Über uns — Timerdoro',
     'about.eyebrow': 'Unsere Geschichte',
     'about.h1': 'Allein gebaut, in Wien, mit Sorgfalt.',
     'about.subtitle': 'Eine kleine Geschichte, warum es Timerdoro gibt.',
     'about.profile.role': 'Informatik-Student an der TU Wien · Indie-iOS-Entwickler · Baut Timerdoro seit 2025',
+
+    // ── Warum
     'about.h2.why': 'Warum ich das gebaut habe',
-    'about.why.p1': 'Ich habe jede Pomodoro-App im App Store ausprobiert. Manche waren schön, aber fehlten Funktionen, die ich brauchte. Andere hatten alles, fühlten sich aber überladen an oder drängten mich in teure Abos für Grundfunktionen. Keine fühlte sich richtig an.',
+    'about.why.p1': 'Ich habe jede Pomodoro-App im App Store ausprobiert. Manche waren schön, hatten aber Funktionen, die ich brauchte, nicht. Andere hatten alles, fühlten sich aber überladen an oder drängten mich in teure Abos für Grundfunktionen. Keine fühlte sich richtig an.',
     'about.why.p2': 'Also habe ich angefangen, meine eigene zu bauen — zunächst nur für mich. Nachdem Freunde frühe Versionen probierten und fragten, wann sie sie aufs Handy bekommen, beschloss ich, sie real zu machen.',
     'about.why.p3': 'Timerdoro ist die App, die ich mir gewünscht habe: sauber, schön, nativ in Apples Ökosystem, mit fairem Preis und null Kompromissen bei der Privatsphäre.',
+
+    // ── Unternehmen (Aufgabe 0)
+    'about.h2.company': 'Das Unternehmen im Überblick',
+    'about.company.intro': 'Eine kurze Zusammenfassung der Strukturen hinter der App — rechtlich, organisatorisch und kommerziell.',
+    'about.company.name.l': 'Unternehmensname',
+    'about.company.name.v': 'Timerdoro (Einzelunternehmer: Raphael Wudernitz)',
+    'about.company.legal.l': 'Rechtsform',
+    'about.company.legal.v': 'Einzelunternehmer / Privatbetreiber (nicht-gewerblich, Liebhaberei)',
+    'about.company.location.l': 'Standort',
+    'about.company.location.v': 'Wien, Österreich (1040)',
+    'about.company.founded.l': 'Gegründet',
+    'about.company.founded.v': '2025',
+    'about.company.employees.l': 'Mitarbeiter',
+    'about.company.employees.v': '1 (Solo-Indie-Entwickler)',
+    'about.company.model.l': 'Geschäftsmodell',
+    'about.company.model.v': 'Freemium — kostenlose App + einmaliges Pro-Upgrade (€3,99, lebenslang, kein Abo)',
+    'about.company.product.l': 'Produkt',
+    'about.company.product.v': 'Native iOS / iPadOS / macOS Pomodoro-Timer-App (SwiftUI)',
+    'about.company.audience.l': 'Zielgruppe',
+    'about.company.audience.v': 'Apple-Nutzer, die ablenkungsfreie, datenschutzorientierte Fokus-Tools suchen — Studierende, Wissensarbeiter, Designer, Entwickler',
+
+    // ── Werte
     'about.h2.believe': 'Woran ich glaube',
     'about.values.card1.h': '🍅 Fokus statt Funktionen',
     'about.values.card1.p': 'Eine App sollte eine Sache außergewöhnlich gut machen. Pomodoro ist der Kern, alles andere dient dem.',
     'about.values.card2.h': '🔒 Deine Daten gehören dir',
-    'about.values.card2.p': 'Keine Analyse, keine Tracker, keine Drittanbieter-SDKs. Was auf deinem Gerät passiert, bleibt auf deinem Gerät.',
-    'about.values.card3.h': '💎 Einmal zahlen, immer haben',
+    'about.values.card2.p': 'Keine Analytics, keine Tracker, keine Drittanbieter-SDKs. Was auf deinem Gerät passiert, bleibt auf deinem Gerät.',
+    'about.values.card3.h': '💎 Einmal kaufen, dauerhaft besitzen',
     'about.values.card3.p': 'Abos für alles wurden absurd. Kaufe Timerdoro Pro einmal und behalte es für immer.',
-    'about.values.card4.h': '🎨 Design zählt',
-    'about.values.card4.p': 'Du wirst Stunden mit dieser App verbringen. Sie verdient es, schön zu sein, nicht nur funktional.',
-    'about.values.card5.h': '🍎 Nativ ist am besten',
-    'about.values.card5.p': 'Mit SwiftUI für iPhone, iPad und Mac gebaut. Jede Plattform fühlt sich an wie zu Hause, nicht wie ein Nachgedanke.',
-    'about.values.card6.h': '♻️ Langsam, bewusst veröffentlichen',
-    'about.values.card6.p': 'Lieber ein poliertes Update als zehn halbgare. Qualität vor Quantität.',
-    'about.h2.brand': 'Die Marke Timerdoro',
-    'about.brand.intro': 'Timerdoro ist mehr als Software — es ist eine kleine Markenidentität, aufgebaut aus drei rechtlich unterscheidbaren Markenformen. Was sie sind, was sie signalisieren und wie sie verwendet werden:',
-    'about.brand.word.h': '1. Wortmarke — „Timerdoro"',
-    'about.brand.word.p': 'Der Name verbindet „Timer" (die Funktion) mit dem Suffix „-doro" (Anspielung auf Pomodoro — den Küchenwecker, der der Technik den Namen gab). Es ist ein Kunstwort, das in keinem Wörterbuch steht, was es markenrechtlich stark macht: keine beschreibende Überschneidung mit bestehenden Marken, auf einen Blick unterscheidungskräftig.',
-    'about.brand.word.nizza': 'Vorgesehene Nizza-Klasse: 9 (herunterladbare Software für Zeitmanagement).',
-    'about.brand.figurative.h': '2. Bildmarke — das Tomaten-Icon',
-    'about.brand.figurative.p': 'Die vereinfachte rote Tomatensilhouette mit stilisiertem grünem Stiel. Verwendet als App-Icon, Favicon und als eigenständige Grafik im Marketing. Designt, um bei 28×28 px im Systemtray genauso erkennbar zu sein wie in voller App-Icon-Größe im Mac-Dock.',
-    'about.brand.figurative.nizza': 'Vorgesehene Nizza-Klassen: 9, 42 (herunterladbare Software, Software-as-a-Service).',
-    'about.brand.color.h': '3. Farbmarke — Tomato Red #EE5C52',
-    'about.brand.color.p': 'Ein spezifischer Tomatenrot-Ton, RGB (238, 92, 82), durchgehend in App und Webseite als primärer Akzent verwendet. Eine reine Farbmarke wird selten allein registriert (das EUIPO verlangt Nachweis erworbener Unterscheidungskraft nach den Heidelberger-Bauchemie-Kriterien, EuGH C-49/02). Unsere Farbe wird daher stets mit der Bildmarke kombiniert verwendet — was die Wiedererkennbarkeit der Marke über die Zeit stärkt.',
-    'about.brand.color.nizza': 'Vorgesehene Nizza-Klasse: 9 (in Kombination mit Wort- und Bildmarke).',
-    'about.brand.research.h': 'Markenrechts-Recherche',
-    'about.brand.research.p': 'Vor Verwendung der Marken haben wir das EUIPO TMview und Madrid Monitor auf ähnliche Marken in Klassen 9 und 42 durchsucht. „Timerdoro" lieferte keine direkten Treffer. Die nächsten Ergebnisse — „Pomodoro"-bezogene Marken — beziehen sich auf Lebensmittel oder andere Software mit ausreichend distinkter Markenführung, um Verwechslungsgefahr nach Art. 8(1)(b) UMV auszuschließen.',
+    'about.values.card4.h': '🎨 Design ist wichtig',
+    'about.values.card4.p': 'Du verbringst Stunden mit dieser App. Sie verdient es, schön zu sein, nicht nur funktional.',
+    'about.values.card5.h': '🍎 Native ist am besten',
+    'about.values.card5.p': 'Gebaut mit SwiftUI für iPhone, iPad und Mac. Jede Plattform fühlt sich wie zu Hause an, nicht wie ein Nachgedanke.',
+    'about.values.card6.h': '♻️ Langsam, mit Absicht veröffentlichen',
+    'about.values.card6.p': 'Lieber ein poliertes Update als zehn halbfertige. Qualität vor Quantität.',
 
+    // ── Marke (Aufgabe 3)
+    'about.h2.brand': 'Die Marke Timerdoro',
+    'about.brand.intro': 'Timerdoro ist mehr als Software — eine kleine Markenidentität, aufgebaut um drei rechtlich unterscheidbare Markenformen. Jede ist konkreten Nizza-Klassen zugeordnet, die den rechtlichen Schutzbereich verankern.',
+    'about.brand.classes': 'Nizza-Klassen:',
+
+    'about.brand.word.h': 'Wortmarke — „Timerdoro"',
+    'about.brand.word.p': 'Der Name kombiniert „Timer" (die Funktion) mit dem Suffix „-doro" (eine Anspielung auf Pomodoro — den Küchentimer, der der Technik ihren Namen gab). Es ist ein Kunstwort, in keinem Wörterbuch zu finden, was es markenrechtlich stark macht: unterscheidungskräftig auf einen Blick, keine beschreibende Überlappung mit Alltagsvokabular.',
+    'about.brand.word.c1': 'Klasse 9 — herunterladbare Software',
+
+    'about.brand.figurative.h': 'Bildmarke — das Tomaten-Icon',
+    'about.brand.figurative.p': 'Eine vereinfachte rote Tomaten-Silhouette mit stilisiertem grünen Stiel. Verwendet als App-Icon, Favicon und als eigenständige Grafik im Marketing. So gestaltet, dass es bei 28×28 px in einer Menüleiste genauso erkennbar ist wie in voller App-Icon-Größe im Mac Dock.',
+    'about.brand.figurative.c1': 'Klasse 9 — herunterladbare Software',
+    'about.brand.figurative.c2': 'Klasse 42 — Software-as-a-Service',
+
+    'about.brand.color.h': 'Farbmarke — Tomato Red #EE5C52',
+    'about.brand.color.p': 'Ein konkreter Farbton Tomatenrot, RGB (238, 92, 82), durchgängig in der App und auf der Website als Hauptakzentfarbe verwendet. Reine Farbmarken werden selten allein eingetragen — die EUIPO verlangt Nachweis erworbener Unterscheidungskraft (C-49/02 „Heidelberger Bauchemie"). Unsere Farbe wird daher stets gemeinsam mit der Bildmarke verwendet, was die Wiedererkennung über die Zeit stärkt.',
+    'about.brand.color.c1': 'Klasse 9 (in Kombination mit Wort- und Bildmarke)',
+
+    // ── Recherche (Aufgabe 3 — Konflikt-Check)
+    'about.h2.research': 'Markenkonflikt-Recherche',
+    'about.research.intro': 'Vor der Annahme der Marken haben wir die wichtigsten Markendatenbanken nach ähnlichen Marken in den relevanten Nizza-Klassen durchsucht. Das Ergebnis war differenziert — hier was wir gefunden haben und wie wir es entschärfen.',
+
+    'about.research.s1.s': '✓ FREI',
+    'about.research.s1.h': 'EUIPO TMview & Madrid Monitor',
+    'about.research.s1.p': 'Keine eingetragenen EU- oder internationalen Marken für „Timerdoro" in den Klassen 9 oder 42. „Pomodoro"-bezogene Marken existieren, beziehen sich aber auf Lebensmittel, Restaurants oder nicht verwandte Software mit ausreichend distinkten Branding.',
+
+    'about.research.s2.s': '⚠ BEACHTEN',
+    'about.research.s2.h': 'Vorbenutzung: timerdoro.com',
+    'about.research.s2.p': 'Ein webbasierter Pomodoro-Timer unter timerdoro.com (Gelform Inc., USA) ist seit etwa 2015 online. Keine eingetragene Marke in USPTO TESS oder TMview gefunden, aber nutzungsbasierte Common-Law-Rechte können in den USA bestehen. Zur Entschärfung: Unser Angebot ist eine separat gebrandete native Apple-Plattform-App, geografisch zunächst auf EU-Märkte fokussiert, mit eigener visueller Identität (Icon, Farbe, Typografie). Wir beobachten die Situation und sind offen für eine Koexistenz-Vereinbarung.',
+
+    'about.research.s3.s': '✓ FREI',
+    'about.research.s3.h': 'Österreichisches Patentamt (ÖPA)',
+    'about.research.s3.p': 'Kein nationaler österreichischer Markenkonflikt in den Klassen 9 oder 42 gefunden. Recherche durchgeführt über see-ip.patentamt.at.',
+
+    'about.research.s4.s': '✓ FREI',
+    'about.research.s4.h': 'Apple App Store Namens-Check',
+    'about.research.s4.p': 'Keine aktive iOS-App namens „Timerdoro" im App Store zum Zeitpunkt der Einreichung. Bundle-Identifier at.wudernitz.timerdoro ist reserviert.',
+
+    'about.research.note': 'Hinweis: Dies ist eine selbstdurchgeführte vorläufige Prüfung, kein formales Rechtsgutachten. Wir empfehlen eine anwaltsgeführte Freedom-to-Operate-Analyse vor der EU-Markenanmeldung.',
+
+    // ── Roadmap & Contact & TL;DR
     'about.h2.roadmap': 'Die Roadmap',
-    'about.roadmap.p': 'Timerdoro ist jetzt bei v1.0 — das Fundament. Hier ist, was als Nächstes kommt:',
+    'about.roadmap.p': 'Timerdoro steht jetzt bei v1.0 — das Fundament. Hier was als Nächstes kommt:',
     'about.roadmap.li1': 'v1.1 — Apple-Watch-App (eigenständig nutzbar, synchronisiert mit iPhone)',
     'about.roadmap.li2': 'v1.1 — macOS-Menüleiste mit Schnellzugriff-Timer',
-    'about.roadmap.li3': 'v1.2 — Live Activities & Dynamic-Island-Integration',
+    'about.roadmap.li3': 'v1.2 — Live Activities & Dynamic Island Integration',
     'about.roadmap.li4': 'v1.2 — Home-Screen-Widgets mit interaktiven Steuerungen',
-    'about.roadmap.li5': 'v1.3 — iCloud-Sync über alle Apple-Geräte',
+    'about.roadmap.li5': 'v1.3 — iCloud-Sync über alle Apple-Geräte hinweg',
     'about.roadmap.li6': 'v2.0 — Ambient Sounds & Apple-Health-Integration',
     'about.h2.contact': 'Kontakt aufnehmen',
-    'about.contact.p': 'Ich lese jede E-Mail. Egal ob Feature-Wunsch, Bug-Report oder einfach nur Hallo — deine Nachricht erreicht mich direkt, ohne Support-Bot dazwischen. Schreib auf der Kontaktseite oder maile mir.',
+    'about.contact.p': 'Ich lese jede E-Mail. Ob Feature-Wunsch, Bug-Report oder einfach nur Hallo sagen — deine Nachricht erreicht mich direkt, ohne Support-Bot dazwischen.',
     'about.tldr.title': 'DANKE',
-    'about.tldr.text': 'Wenn du Timerdoro nutzt, unterstützt du direkt die Reise eines Solo-Indie-Entwicklers. Das bedeutet wirklich viel.',
+    'about.tldr.text': 'Wenn du Timerdoro nutzt, unterstützt du direkt die Reise eines Solo-Indie-Entwicklers. Das bedeutet mir wirklich viel.',
+	'about.btn.contact': 'Kontakt aufnehmen →',
 
-    /* ── Contact ── */
+    /* ── Contact (DE) ── */
     'contact.title': 'Kontakt — Timerdoro',
     'contact.eyebrow': 'Kontakt',
     'contact.h1': 'Lass uns reden.',
@@ -866,7 +975,7 @@ window.TRANSLATIONS = {
     'contact.tldr.title': 'FAIRE WARNUNG',
     'contact.tldr.text': 'Wenn du etwas Unhöfliches schreibst, lese ich es und antworte einmal höflich. Wenn du etwas Durchdachtes schreibst, bekommst du wahrscheinlich ein echtes Gespräch zurück.',
 
-    /* ── FAQ ── */
+    /* ── FAQ (DE) ── */
     'faq.title': 'FAQ — Timerdoro',
     'faq.eyebrow': 'FAQ',
     'faq.h1': 'Häufig gestellte Fragen.',
@@ -914,7 +1023,7 @@ window.TRANSLATIONS = {
     'faq.bottom.title': 'FRAGE NICHT DABEI?',
     'faq.bottom.text': 'Maile an timerdoro@wudernitz.at und ich füge sie der Liste hinzu (auf Wunsch mit Credits).',
 
-    /* ── Press ── */
+    /* ── Press (DE) ── */
     'press.title': 'Pressemappe — Timerdoro',
     'press.eyebrow': 'Pressemappe',
     'press.h1': 'Ressourcen für Journalisten.',
@@ -954,7 +1063,7 @@ window.TRANSLATIONS = {
     'press.contact.avail': 'Verfügbar für: schriftliche Interviews, Podcast-Gastauftritte, Videoanrufe',
     'press.note': 'Hinweis: Pressemappen-Assets werden laufend aktualisiert. Brauchst du etwas Spezifisches, das hier nicht gelistet ist (eigener Screenshot, anderes Format, Videomaterial), melde dich einfach.',
 
-    /* ── Impressum ── */
+    /* ── Impressum (DE) ── */
     'imp.title': 'Impressum — Timerdoro',
     'imp.h1': 'Impressum',
     'imp.subtitle': 'Offenlegung gemäß § 5 ECG und § 25 MedienG (Österreich).',
@@ -977,7 +1086,7 @@ window.TRANSLATIONS = {
     'imp.copyright.h': 'Urheberrecht',
     'imp.copyright.p': 'Texte, Bilder, Logos und sonstige Inhalte dieser Seite unterliegen, soweit nicht anders gekennzeichnet, dem österreichischen Urheberrecht (UrhG) und dem EU-Recht. Eine Lizenzaufstellung der einzelnen Werke findet sich auf der Quellen-Seite.',
 
-    /* ── Datenschutz ── */
+    /* ── Datenschutz (DE) ── */
     'priv.title': 'Datenschutzerklärung — Timerdoro',
     'priv.h1': 'Datenschutzerklärung',
     'priv.subtitle': 'Wie wir Daten auf dieser Website behandeln. Nach EU-Datenschutz-Grundverordnung (DSGVO) und österreichischem Datenschutzgesetz (DSG).',
@@ -1030,7 +1139,7 @@ window.TRANSLATIONS = {
     'priv.changes.h': '6. Änderungen dieser Erklärung',
     'priv.changes.p': 'Diese Erklärung kann angepasst werden, wenn sich unsere Verarbeitung ändert. Das „Zuletzt aktualisiert"-Datum oben zeigt die jüngste Revision. Wesentliche Änderungen werden über ein Seitenbanner angekündigt.',
 
-    /* ── Cookies-Seite ── */
+    /* ── Cookies-Seite (DE) ── */
     'cookies.title': 'Cookie-Richtlinie — Timerdoro',
     'cookies.h1': 'Cookie-Richtlinie',
     'cookies.subtitle': 'Was wir auf deinem Gerät speichern, warum, und wie du es steuerst.',
@@ -1061,7 +1170,7 @@ window.TRANSLATIONS = {
     'cookies.control.li3': 'In den Browser-Einstellungen jede Speicherung für diese Seite generell blockieren.',
     'cookies.control.note': 'Wenn du essenzielle Speicherung blockierst, funktioniert die Seite weiter — deine Spracheinstellung wird aber zwischen Besuchen nicht mehr behalten.',
 
-    /* ── Lizenz / EULA ── */
+    /* ── Lizenz / EULA (DE) ── */
     'lic.title': 'Lizenzbedingungen (EULA) — Timerdoro',
     'lic.h1': 'Lizenzbedingungen (EULA)',
     'lic.subtitle': 'Endnutzer-Lizenzvertrag für die Anwendung Timerdoro.',
@@ -1100,7 +1209,7 @@ window.TRANSLATIONS = {
     'lic.misc.h': '10. Sonstiges',
     'lic.misc.p': 'Sollte eine Bestimmung dieser Lizenz ungültig sein oder werden, berührt dies nicht die Wirksamkeit der übrigen Bestimmungen. Änderungen bedürfen der Schriftform (E-Mail genügt).',
 
-    /* ── Quellen / Credits ── */
+    /* ── Quellen / Credits (DE) ── */
     'cred.title': 'Quellen & Lizenzen — Timerdoro',
     'cred.h1': 'Quellen & Lizenzen',
     'cred.subtitle': 'Quellenangaben, Zuschreibungen und Lizenzbedingungen für alle Inhalte dieser Website.',
@@ -1141,7 +1250,7 @@ window.TRANSLATIONS = {
     'cred.changes.h': '6. Änderungen',
     'cred.changes.p': 'Wenn neue Assets zur Seite kommen, werden sie hier mit ihrer Lizenz aufgelistet. Wenn dir ein Zuschreibungsfehler auffällt oder du meinst, ein Werk werde falsch verwendet — schreib uns, wir korrigieren oder entfernen es umgehend.',
 
-    /* ── Barrierefreiheitserklärung ── */
+    /* ── Barrierefreiheitserklärung (DE) ── */
     'acc.title': 'Barrierefreiheitserklärung — Timerdoro',
     'acc.h1': 'Barrierefreiheitserklärung',
     'acc.subtitle': 'Wie barrierefrei diese Website ist und wie du Probleme meldest.',
