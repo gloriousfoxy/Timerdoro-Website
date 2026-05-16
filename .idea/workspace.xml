@@ -8,9 +8,15 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/translations.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/faq/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/privacypolicy/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/privacypolicy/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index_original.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/ai-disclosure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/ai-disclosure/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/credits/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/impressum/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/impressum/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,7 +24,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="47" />
+    <option name="cachedIndexableFilesCount" value="84" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -45,7 +51,7 @@
     &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
     &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
     &quot;com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;new-version&quot;,
     &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/raphael/Downloads/timerdoro&quot;,
@@ -90,7 +96,10 @@
       <workItem from="1778608355225" duration="3456000" />
       <workItem from="1778612325538" duration="902000" />
       <workItem from="1778613239073" duration="3313000" />
-      <workItem from="1778616919376" duration="2534000" />
+      <workItem from="1778616919376" duration="2919000" />
+      <workItem from="1778956378472" duration="2000" />
+      <workItem from="1778956391571" duration="31000" />
+      <workItem from="1778956436206" duration="251000" />
     </task>
     <servers />
   </component>

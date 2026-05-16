@@ -377,6 +377,14 @@ h1, h2, h3, h4 { letter-spacing: -0.4px; }
 
 /* Hero + product screenshots (assets/images/*.png) */
 
+.showcase-section-heading {
+  text-align: center;
+}
+.showcase-section-sub {
+  text-align: center;
+  padding-bottom: 24px;
+}
+
 .hero-screenshot {
   margin: 60px auto 0;
   max-width: min(1120px, 100%);

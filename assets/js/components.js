@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function () {
             '<a href="' + base + 'press/index.html" class="nav-link" data-i18n="nav.press">Press</a>' +
             '<a href="' + base + 'contact/index.html" class="nav-link" data-i18n="nav.contact">Contact</a>' +
             '<button type="button" class="nav-lang" data-lang-toggle aria-label="Switch language">DE</button>' +
-            '<a href="#" class="nav-link nav-cta" data-i18n="nav.cta">Join Beta</a>' +
+            '<a href="https://testflight.apple.com/join/EP1wd7Ma" class="nav-link nav-cta" data-i18n="nav.cta">Join Beta</a>' +
           '</div>' +
         '</div>' +
       '</nav>';
@@ -83,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 '<li><a href="' + base + 'index.html#features" data-i18n="footer.link.features">Features</a></li>' +
                 '<li><a href="' + base + 'index.html#pricing" data-i18n="footer.link.pricing">Pricing</a></li>' +
                 '<li><a href="' + base + 'faq/index.html" data-i18n="footer.link.faq">FAQ</a></li>' +
-                '<li><a href="#" data-i18n="footer.link.beta">Join Beta</a></li>' +
+                '<li><a href="https://testflight.apple.com/join/EP1wd7Ma" data-i18n="footer.link.beta">Join Beta</a></li>' +
                 '<li><a href="' + base + 'privacypolicy/index.html" data-i18n="footer.link.privacypolicy">App Store Policy Privacy</a></li>' +
               '</ul>' +
             '</div>' +

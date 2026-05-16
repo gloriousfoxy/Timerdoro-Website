@@ -17,7 +17,7 @@
   'use strict';
 
   var STORAGE_KEY = 'timerdoro_lang';
-  var DEFAULT_LANG = 'en';
+  var DEFAULT_LANG = 'de';
   var SUPPORTED = ['en', 'de'];
 
   function detectInitialLang() {
