@@ -2698,6 +2698,23 @@ button:focus-visible,
   }
 }
 
+@media (prefers-contrast: more) {
+  :root {
+    --tomato: #FF8A82;
+    --tomato-light: #FFB0AA;
+
+    --text-2: rgba(255,255,255,0.82);
+    --text-3: rgba(255,255,255,0.68);
+
+    --border: rgba(255,255,255,0.16);
+    --border-strong: rgba(255,255,255,0.28);
+  }
+
+  .eyebrow {
+    color: #ffffff;
+  }
+}
+
 /* Language-aware visibility (no JS dependency) */
 html[lang="en"] .lang-de { display: none; }
 html[lang="de"] .lang-en { display: none; }

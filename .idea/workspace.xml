@@ -7,16 +7,8 @@
     <list default="true" id="919be96c-e3d9-46ea-9584-bb811bbf6a1a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/components.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/components.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/i18n.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/i18n.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/translations.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/translations.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/contact/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/faq/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/faq/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index_original.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/ai-disclosure/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/ai-disclosure/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/credits/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/credits/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legal/impressum/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/impressum/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/legal/accessibility/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/legal/accessibility/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="84" />
+    <option name="cachedIndexableFilesCount" value="39" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,7 +91,8 @@
       <workItem from="1778616919376" duration="2919000" />
       <workItem from="1778956378472" duration="2000" />
       <workItem from="1778956391571" duration="31000" />
-      <workItem from="1778956436206" duration="251000" />
+      <workItem from="1778956436206" duration="852000" />
+      <workItem from="1778965865608" duration="2623000" />
     </task>
     <servers />
   </component>
