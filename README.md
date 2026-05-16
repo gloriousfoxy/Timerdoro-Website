@@ -1,18 +1,18 @@
 # Timerdoro — Website
 
-A bilingual (DE/EN) marketing & legal site for the Timerdoro Pomodoro app.
-Production site → https://timerdoro.wudernitz.at
+Bilinguale (DE/EN) Marketing- und Rechtsseite für die Timerdoro Pomodoro-App.
+Live unter → https://timerdoro.wudernitz.at
 
-## What this is
+## Was das hier ist
 
-Two things in one repository:
+Zwei Dinge in einem Repo:
 
-1. The **real product website** for Timerdoro (Beta in TestFlight)
-2. A **complete LVA submission** mapped to six university tasks
+1. Die **echte Produkt-Website** für Timerdoro (Beta in TestFlight)
+2. Eine **komplette LVA-Abgabe**, gemappt auf sechs Uni-Aufgaben
 
 ## LVA-Aufgaben — Mapping
 
-| Aufgabe                                       | Wo gelöst                                                 |
+| Aufgabe                                       | Wo gelöst                                                  |
 |-----------------------------------------------|------------------------------------------------------------|
 | **1.** Barrierefreiheit (WCAG 2.2 AA)         | `legal/accessibility/index.html` + Skip-Link in `components.js` + Kontrast-Fixes in `style.css` |
 | **2.** Urheberrecht / Quellen & Lizenzen      | `legal/credits/index.html` — mit echtem Audio + animiertem SVG |
@@ -21,93 +21,104 @@ Two things in one repository:
 | **5.** Datenschutz + Cookies (DSGVO)          | `legal/privacy/index.html` + `legal/cookies/index.html` + Mock-Banner in `main.js` |
 | **6.** Gewerbe / Impressum / Kontaktformular  | `legal/impressum/index.html` + `contact/index.html` (Mock-Formular) |
 
-## File structure
+## Dateistruktur
 
 ```
 timerdoro/
-├── index.html                       Landing page (new per-platform showcase)
-├── 404.html                         Not-found page
-├── README.md                        This file
-├── about/index.html                 Team + Brand (3 Markenformen)
-├── contact/index.html               Email + Mock contact form
+├── index.html                       Landing-Page (Showcase pro Plattform)
+├── 404.html                         Not-found-Seite
+├── robots.txt                       Crawler-Anweisungen
+├── sitemap.xml                      URL-Liste für Suchmaschinen
+├── README.md                        Diese Datei
+├── about/index.html                 Über mich + Marke (3 Markenformen)
+├── contact/index.html               E-Mail + Mock-Kontaktformular
 ├── faq/index.html                   15 Q&A
-├── press/index.html                 Press kit
+├── press/index.html                 Pressemappe
 └── legal/
     ├── privacy/index.html           DSGVO Datenschutz
     ├── cookies/index.html           Cookie-Policy mit Kategorien
     ├── impressum/index.html         § 5 ECG / § 25 MedienG
     ├── license/index.html           EULA (KSchG/ABGB/UrhG)
     ├── credits/index.html           Urheberrecht-Doku mit Audio/SVG
-    └── accessibility/index.html     Barrierefreiheitserklärung
-```
+    ├── accessibility/index.html     Barrierefreiheitserklärung
+    └── ai-disclosure/index.html     KI-Transparenz (EU AI Act)
 
-```
 assets/
-├── audio/completion-chime.mp3       4 KB  — CC0 (self-generated)
-│       completion-chime.wav        70 KB — CC0 backup
-├── video/timer-ring-animation.svg   2 KB  — CC BY 4.0 SMIL animation
-├── images/                          App screenshots + icons
-├── css/style.css                   ~1900 lines
+├── audio/completion-chime.mp3       4 KB  — CC0 (selbst generiert)
+│       completion-chime.wav        70 KB — CC0 Backup
+├── video/timer-ring-animation.svg   2 KB  — CC BY 4.0 SMIL-Animation
+├── images/                          App-Screenshots + Icons
+├── css/style.css                   ~1900 Zeilen
 └── js/
-    ├── translations.js              509 EN + 509 DE strings
-    ├── i18n.js                      i18n engine + language switcher
-    ├── components.js                Nav, footer, skip link
-    └── main.js                      Cookie banner mock + form mock
+    ├── translations.js              EN + DE Strings
+    ├── i18n.js                      i18n-Engine + Sprachumschalter
+    ├── components.js                Nav, Footer, Skip-Link
+    └── main.js                      Cookie-Banner-Mock + Formular-Mock
 ```
 
-## How the i18n works
+## Wie das i18n funktioniert
 
-Every visible text is marked with `data-i18n="namespace.key"`.
-The engine in `i18n.js` looks up the key in `translations.js` for the
-currently active language and replaces the element's textContent.
+Jeder sichtbare Text trägt ein `data-i18n="namespace.key"`-Attribut.
+Die Engine in `i18n.js` schaut den Key in `translations.js` für die
+aktuell aktive Sprache nach und ersetzt den textContent.
 
-Examples:
+Beispiele:
 ```html
 <h1 data-i18n="hero.titleA">Focus, simplified.</h1>
 <input data-i18n-attr="placeholder:contact.form.namePh">
 <title data-i18n="index.title">Timerdoro</title>
 ```
 
-Default text in the HTML is the English fallback shown until JS runs.
+Der Default-Text im HTML ist der englische Fallback, der angezeigt wird,
+bis JS läuft.
 
-Language is stored in `localStorage` under `timerdoro_lang` and
-preserved across pages. Browser language is detected on first visit.
+Die Sprache wird in `localStorage` unter `timerdoro_lang` gespeichert und
+über alle Seiten hinweg beibehalten. Beim ersten Besuch wird die Browser-Sprache
+erkannt.
 
-## How the Cookie banner works (DSGVO mock)
+## Wie der Cookie-Banner funktioniert (DSGVO-Mock)
 
-The banner shows 4 categories per § 165 TKG 2021 / GDPR Art. 6:
-- **Strictly necessary** — always on (language + consent flag)
-- **Functional** — would store UI prefs (currently inert)
-- **Analytics (mock)** — labelled "Currently not active"
-- **Marketing (mock)** — labelled "Currently not active"
+Der Banner zeigt 4 Kategorien gemäß § 165 TKG 2021 / DSGVO Art. 6:
 
-The UI is fully implemented (Accept / Reject / Save / Manage). Consent is stored
-in `localStorage.timerdoro_cookie_consent_v2`. Nothing is ever actually transmitted —
-the inactive categories are documented as such in the cookie policy.
+- **Unbedingt erforderlich** — immer an (Sprache + Einwilligungs-Flag)
+- **Funktional** — würde UI-Einstellungen speichern (aktuell inert)
+- **Analyse (Mock)** — als „aktuell nicht aktiv" beschriftet
+- **Marketing (Mock)** — als „aktuell nicht aktiv" beschriftet
 
-## Local testing
+Das UI ist voll implementiert (Akzeptieren / Ablehnen / Speichern / Verwalten).
+Einwilligungen landen in `localStorage.timerdoro_cookie_consent_v2`. Übertragen
+wird nichts — die inaktiven Kategorien sind in der Cookie-Policy entsprechend
+dokumentiert.
 
-For full fidelity (the cookie banner needs JS, language toggle needs translations.js):
+## Lokales Testen
+
+Für volle Funktionalität (Cookie-Banner braucht JS, Sprachumschalter braucht
+`translations.js`) lokal über einen kleinen HTTP-Server laufen lassen:
 
 ```bash
-cd /path/to/timerdoro
+cd /pfad/zu/timerdoro
 python3 -m http.server 8000
 # → http://localhost:8000
 ```
 
+`file://` direkt im Browser geht nicht — der Browser blockiert dann das
+Laden der JS-Module aus Sicherheitsgründen.
+
 ## Deployment
 
-Standard FTP to World4You:
+Standard-FTP zu World4You:
+
 - Host: `ftp.world4you.com`
 - Port: `21`
-- Target folder: `html/`
+- Zielordner: `html/`
 
-Upload the contents of this directory.
+Inhalt dieses Verzeichnisses hochladen, fertig.
 
-## Author
+## Autor
 
 Raphael Wudernitz · timerdoro@wudernitz.at · github.com/gloriousfoxy
 
-## License
+## Lizenz
 
-All code and content © Raphael Wudernitz 2026 unless attributed otherwise on `/legal/credits`.
+Sämtlicher Code und alle Inhalte © Raphael Wudernitz 2026, soweit nicht
+auf `/legal/credits` anders ausgewiesen.
