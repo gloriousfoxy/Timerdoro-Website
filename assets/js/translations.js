@@ -42,13 +42,84 @@ window.TRANSLATIONS = {
     'footer.link.press': 'Press Kit',
     'footer.link.privacy': 'Privacy',
     'footer.link.cookies': 'Cookies',
-    'footer.link.impressum': 'Impressum',
+    'footer.link.impressum': 'Imprint',
     'footer.link.license': 'License (EULA)',
     'footer.link.credits': 'Credits',
     'footer.link.accessibility': 'Accessibility',
     'footer.link.privacypolicy': 'Privacy Policy (App Store)',
     'footer.link.ai-disclosure': 'AI Disclosure',
     'footer.bottom.copy': '© 2026 Timerdoro · Built in Austria',
+
+    'lic.title': 'License Agreement (EULA) — Timerdoro',
+    'lic.h1': 'License Agreement (EULA)',
+    'lic.subtitle': 'End User License Agreement for the Timerdoro application.',
+    'lic.lastUpdated': 'Last updated: May 2026',
+
+    'lic.scope.h': '1. Scope',
+    'lic.scope.p': 'These terms govern the use of “Timerdoro” — a Pomodoro timer application for iPhone, iPad, and Mac, published by Raphael Wudernitz, In der Flur 15, 2115 Ernstbrunn, Austria (“Licensor”). By installing or using the app, you (“Licensee”) agree to these terms.',
+
+    'lic.grant.h': '2. Grant of license',
+    'lic.grant.p': 'The Licensor grants the Licensee a non-exclusive, non-transferable, revocable license to use the app for private or commercial purposes on Apple devices owned or controlled by the Licensee. Within the Apple ecosystem, Family Sharing for up to 5 additional accounts is permitted in accordance with Apple’s policies.',
+
+    'lic.pro.h': '3. Free version & Pro upgrade',
+    'lic.pro.p': 'The base application is free of charge. The in-app purchase “Pro” (€3.99 one-time payment) unlocks additional features. The Pro upgrade is tied to your Apple ID and can be restored on other devices signed in with the same Apple ID.',
+
+    'lic.restrictions.h': '4. Restrictions',
+    'lic.restrictions.intro': 'The Licensee may NOT:',
+    'lic.restrictions.li1': 'reverse engineer, decompile, or disassemble the app — except to the extent permitted under § 40e Austrian Copyright Act (UrhG) for interoperability purposes',
+    'lic.restrictions.li2': 'redistribute, sublicense, sell, rent, lease, or lend the app',
+    'lic.restrictions.li3': 'remove or alter copyright, trademark, or attribution notices',
+    'lic.restrictions.li4': 'use the app unlawfully',
+
+    'lic.ip.h': '5. Intellectual property',
+    'lic.ip.p': 'The app, all underlying source code, the name “Timerdoro”, the tomato icon, and the specific tomato-red color tone (#EE5C52) remain the sole property of the Licensor. All rights not expressly granted are reserved (§ 14 Austrian Copyright Act / UrhG).',
+
+    'lic.privacy.h': '6. Privacy',
+    'lic.privacy.p': 'The app processes data exclusively locally on your device. Please refer to the separate Privacy Policy on this website.',
+
+    'lic.warranty.h': '7. Warranty & liability',
+    'lic.warranty.p': 'For consumers within the EEA: statutory warranty rights under §§ 922 et seq. Austrian Civil Code (ABGB) and Directive (EU) 2019/770 (digital content) remain fully applicable and are not limited by this license. Beyond this, the Licensor excludes all other express or implied warranties to the extent permitted by law.',
+    'lic.warranty.liability': 'The Licensor is liable for damages caused intentionally or through gross negligence (§ 6(1) Austrian Consumer Protection Act / KSchG). Liability for slight negligence is excluded — except in cases of personal injury or breach of essential contractual obligations. Liability for indirect or consequential damages, lost profits, or lost data (beyond what would typically be expected from normal app usage) is excluded to the extent permitted by law.',
+
+    'lic.term.h': '8. Term & termination',
+    'lic.term.p': 'This license remains valid until terminated. The Licensee may terminate it by deleting all copies of the app. The Licensor may terminate the license immediately in the event of a material breach of contract by the Licensee. Apple’s App Store refund procedures remain unaffected.',
+
+    'lic.law.h': '9. Governing law & jurisdiction',
+    'lic.law.p': 'Austrian law applies, excluding its conflict-of-law provisions and the UN Convention on Contracts for the International Sale of Goods (CISG). For consumers, mandatory consumer protection laws of their country of residence remain unaffected (Art. 6 Rome I Regulation). Jurisdiction for non-consumer disputes: Vienna.',
+
+    'lic.misc.h': '10. Miscellaneous',
+    'lic.misc.p': 'Should any provision of this license be or become invalid, the validity of the remaining provisions shall remain unaffected. Amendments must be made in writing (email is sufficient).',
+
+    'cookies.title': 'Cookie Policy — Timerdoro',
+    'cookies.h1': 'Cookie Policy',
+    'cookies.subtitle': 'What this website stores in your browser and why.',
+    'cookies.lastUpdated': 'Last updated: May 2026',
+
+    'cookies.intro.h': 'In short',
+    'cookies.intro.p': 'This website does not use traditional HTTP cookies. The only data stored is placed in your localStorage and consists of two small keys listed below. No tracking, no third parties, no analytics pixels.',
+
+    'cookies.basis.h': 'Legal basis (§ 165 TKG 2021 / ePrivacy)',
+    'cookies.basis.p': 'Storing or accessing data on a user’s device requires either: (1) consent for non-essential storage, or (2) strict technical necessity for the service explicitly requested by the user. By default, I only use category (2); non-essential categories are transparently listed in the banner but are currently NOT active.',
+
+    'cookies.what.h': 'What I actually store',
+    'cookies.what.intro': 'Only the following keys are written to your browser localStorage:',
+    'cookies.what.k1.k': 'timerdoro_lang',
+    'cookies.what.k1.purpose': 'Your selected interface language (en/de).',
+    'cookies.what.k1.legal': 'Essential — Art. 6(1)(f) GDPR / § 165(3) TKG 2021.',
+    'cookies.what.k1.life': 'Until you clear your browser data.',
+    'cookies.what.k2.k': 'timerdoro_cookie_consent_v2',
+    'cookies.what.k2.purpose': 'Your saved consent preferences for the demo categories.',
+    'cookies.what.k2.legal': 'Essential — proof of consent (Art. 7(1) GDPR).',
+    'cookies.what.k2.life': 'Until you clear your browser data or change your selection.',
+
+    'cookies.third.h': 'Third-party cookies',
+    'cookies.third.p': 'I do NOT load any third-party scripts. No Google Analytics, no Meta Pixel, no Hotjar, no Cloudflare Insights. No third-party cookies are set on this website.',
+
+    'cookies.control.h': 'How to control cookies',
+    'cookies.control.li1': 'Use “Manage cookie settings” in the footer to reopen the banner.',
+    'cookies.control.li2': 'Clear browser site data: in Safari/Firefox/Chrome settings, locate this website and choose “Clear data”.',
+    'cookies.control.li3': 'Block all storage for this website entirely in your browser settings.',
+    'cookies.control.note': 'If you block essential storage, the website will still function — however, your language preference will no longer persist between visits.',
 
     // Cookie banner
     'cookie.title': 'Cookies & local storage',
@@ -517,7 +588,7 @@ window.TRANSLATIONS = {
     'ai.generated.li1': 'Structural HTML markup for page templates and components',
     'ai.generated.li2': 'CSS styling, layout logic, and design system code',
     'ai.generated.li3': 'JavaScript for interactive UI elements and utility functions',
-    'ai.generated.outro': 'The product name, copy, pricing, feature descriptions, and any other text on this site were written by me without AI help.',
+    'ai.generated.outro': 'The product name, texts, pricing, feature descriptions, legal content, and all other written material on this website were created by me without AI assistance.',
     'ai.notGenerated.title': 'What was NOT AI-generated',
     'ai.notGenerated.li1': 'Product name, brand identity, and visual design direction',
     'ai.notGenerated.li2': 'All marketing copy, feature descriptions, and headlines',
@@ -1203,7 +1274,7 @@ window.TRANSLATIONS = {
     'ai.generated.li1': 'Strukturellem HTML-Markup für Seitenvorlagen und Komponenten',
     'ai.generated.li2': 'CSS-Styling, Layout-Logik und Design-System-Code',
     'ai.generated.li3': 'JavaScript für interaktive UI-Elemente und Hilfsfunktionen',
-    'ai.generated.outro': 'Produktname, Texte, Preise, Feature-Beschreibungen und alles andere Geschriebene auf dieser Seite habe ich ohne KI-Hilfe erstellt.',
+    'ai.generated.outro': 'Produktname, Texte, Preise, Feature-Beschreibungen, sowie rechtliche Inhalte und alles andere Geschriebene auf dieser Seite habe ich ohne KI-Hilfe erstellt.',
     'ai.notGenerated.title': 'Was NICHT KI-generiert wurde',
     'ai.notGenerated.li1': 'Produktname, Markenidentität und visuelle Designrichtung',
     'ai.notGenerated.li2': 'Alle Marketing-Texte, Feature-Beschreibungen und Überschriften',
